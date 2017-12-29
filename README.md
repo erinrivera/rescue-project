@@ -1,2 +1,2 @@
 # rescue-project
-Creating a more modern site for Rescue Me (shelter animal listings)
+This project is a more modern website for Moreno Valley Animal Shelter.
