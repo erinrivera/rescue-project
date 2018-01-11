@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Lost Pet Notification <Form:get></Form:get></title>
   </head>
@@ -16,17 +17,73 @@
         <p>If you have lost a pet in the Moreno Valley area, please fill out the form below. We will notify you at the contact 
             information you provide if your pet is found by or brought to our facility.</p>
 
-        <form>
-            <fieldset>
+        <form action="#" method="#">
+            <fieldset> <p>
                 <legend>Your Contact Information:</legend>
-                Full Name:<br> <input type="text" name="name" /><br>
-                Address:<br> <input type="text" name="address"/><br>
-                Phone Number:<br> <input type="number" name="phone"/><br>
-                Email:<br> <input type="email" name="email"/><br>
-            </fieldset>
+                <label for="owner-name">Full Name: </label>
+                <input type="text" name="owner-name" id="owner-name" required/><br>
+                <label for="address">Street Address: </label>
+                <input type="text" name="address" id="address" /><br>
+                <label for="city">City: </label>
+                <input type="text" name="city" id="city" /><br>
+                <label for="zip">ZIP Code: </label>
+                <input type="text" name="zip" id="zip" /><br>
+                <label for="phone">Phone Number: </label>
+                <input type="text" name="phone" id="phone" required /><br>
+                <label for="email">Email address: </label>
+                <input type="text" name="email" id="email" required /><br>
+            </p> </fieldset>
             <fieldset>
                 <legend>Your Pet's Information:</legend>
+                <label for="pet-name">Pet's Name: </label>
+                <input type="text" name="name" id="pet-name" required/><br>
+                <label for="species">Species: </label> 
+                <select name="species" id="species" required/><br>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option id="other-species" value="other">Other</option>
+                </select> 
+                <label for="breed">Breed: </label>
+                <input type="text" name="breed" id="breed" required/><br>
+                <label for="age">Age: </label>
+                <input type="text" name="age" id="age" required/><br>
+                <label for="color">Coat color: </label>
+                <input type="text" name="color" id="color" required/><br>
+                <label for="size">Pet Size:</label>
+                <select name="size" id="size" required/><br>
+                    <option value="xs">Extra Small (under 10 lb.)</option>
+                    <option value="sm">Small (10-25 lb.)</option>
+                    <option value="md">Medium (25-50 lb.)</option>
+                    <option value="lg">Large (50-75 lb.)</option>
+                    <option value="xl">Medium (over 75 lb.)</option>
+                </select>
+                <p>
+                <label for="gender">Gender: </label><br>
+                <input type="radio" name="gender" id="gender" value="male" required/>Male  
+                <input type="radio" name="gender" id="gender" value="female" required/>Female
+                <input type="radio" name="gender" id="gender" value="unsure" required/>Unsure<br>
+                 </p>
+                 <p>
+                <label for="altered">Is pet spayed/neutered?: </label><br>
+                <input type="radio" name="altered" id="altered" value="yes" required/>Yes
+                <input type="radio" name="altered" id="altered" value="no" required/>No
+                <input type="radio" name="altered" id="altered" value="unsure" required/>Unsure<br>
+                </p>
+                <p>
+                <label for="last-seen">When and where was your pet last seen?</label><br>
+                <textarea name="last-seen" id="last-seen" cols=50 rows=4></textarea>
+                </p>
+                <p>
+                <label for="description">Please describe any unique traits that could help identify your pet:</label><br>
+                <textarea name="description" id="description" cols=50 rows=4>Collar, clothing, unique physical traits, etc.</textarea>
+                </p>
+                      
             </fieldset>
+
+            <p>
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </p>
         </form>
 
     </div>  
