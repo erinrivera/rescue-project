@@ -12,6 +12,21 @@
 
 }
 
+/********* FORM STYLES **********/
+
+.section-title {
+    padding-top: 1rem;
+}
+
+.first-row {
+    padding-top: 2rem;
+}
+
+.lower-row {
+    padding-top: 0.8rem;
+}
+
+
 
 /********* COMPONENTS ***********/
 button {
