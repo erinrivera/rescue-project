@@ -16,9 +16,10 @@
         <h1 class="page-title">Lost Pet Notification</h1>
         <p>If you have lost a pet in the Moreno Valley area, please fill out the form below. We will notify you at the contact 
             information you provide if your pet is found by or brought to our facility.</p>
+
         <form action="#" method="#">
             <div class=" form-group">
-                <fieldset> <p>
+                <fieldset>
                     <div class="row">
                        <div class="col-lg-12 section-title"> 
                             <legend>Your Contact Information:</legend>
@@ -61,22 +62,49 @@
                             <input class="form-control" type="number" name="zip" id="zip">
                         </div>
                     </div>
-                    
-                </p> </fieldset>
+                </fieldset>
+
                 <fieldset>
-                    <legend>Your Pet's Information:</legend>
-                    <label for="pet-name">Pet's Name: </label>
-                    <input type="text" name="name" id="pet-name" required/><br>
-                    <label for="species">Species: </label> 
-                    <select name="species" id="species" required/><br>
-                        <option value="dog">Dog</option>
-                        <option value="cat">Cat</option>
-                        <option id="other-species" value="other">Other</option>
-                    </select> 
-                    <label for="breed">Breed: </label>
-                    <input type="text" name="breed" id="breed" required/><br>
-                    <label for="age">Age: </label>
-                    <input type="text" name="age" id="age" required/><br>
+                    <div class="row first-row">
+                        <div class="col-lg-12">
+                            <legend>Your Pet's Information:</legend>
+                        </div>
+                    </div>
+                    <div class="row lower-row">
+                        <div class="col-lg-4">
+                            <label for="pet-name">Pet's Name: </label>
+                            <input class="form-control" type="text" name="name" id="pet-name" required/>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="species">Species: </label><br>
+                            <select name="species" id="species" required/>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option id="other-species" value="other">Other</option>
+                            </select> 
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="age">Age:</label>
+                            <input class="form-control" type="number" name="age" id="age">
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="breed">Breed: </label>
+                            <input class="form-control" type="text" name="breed" id="breed" placeholder="Please list all known/suspected breeds if animal is a mix">
+                        </div>
+                    </div>
+                    <div class="row lower-row">
+                        <div class="col-lg-2">
+                            <label for="gender">Gender:</label>
+                            <select name="gender" id="gender" required>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="unsure">Unsure</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    
+                
                     <label for="color">Coat color: </label>
                     <input type="text" name="color" id="color" required/><br>
                     <label for="size">Pet Size:</label>
@@ -89,9 +117,7 @@
                     </select>
                     <p>
                     <label for="gender">Gender: </label><br>
-                    <input type="radio" name="gender" id="gender" value="male" required/>Male  
-                    <input type="radio" name="gender" id="gender" value="female" required/>Female
-                    <input type="radio" name="gender" id="gender" value="unsure" required/>Unsure<br>
+                    <br>
                     </p>
                     <p>
                     <label for="altered">Is pet spayed/neutered?: </label><br>
