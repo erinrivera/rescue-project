@@ -19,9 +19,22 @@
         <form action="#" method="#">
             <div class=" form-group">
                 <fieldset> <p>
-                    <legend>Your Contact Information:</legend>
-                    <label for="owner-name">Full Name: </label>
-                    <input class="form-control inputsm" type="text" name="owner-name" id="owner-name" required/><br>
+                    <div class="row">
+                       <div class="col-lg-12"> 
+                            <legend>Your Contact Information:</legend>
+                        </div>  
+                    </div>
+                    <div class="row first-row">
+                        <div class="col-lg-6"> 
+                            <label for="name">Full Name: </label>   
+                            <input class="form-control" type="text" name="address" id="address" />
+                        </div>  
+                        <div class="col-lg-6"> 
+                            <label for="phone">Phone Number: </label>
+                            <input class="form-control" type="text" name="phone" id="phone" required /><br>
+                        </div>  
+                    </div>
+                    
                     <label for="address">Street Address: </label>
                     <input class="form-control" type="text" name="address" id="address" /><br>
                     <label for="city">City: </label>
@@ -78,7 +91,7 @@
                     <textarea name="description" id="description" cols=50 rows=4>Collar, clothing, unique physical traits, etc.</textarea>
                     </p>        
                 </fieldset>
-                
+
                 <p>
                 <button type="submit">Submit</button>
                 <button type="reset">Reset</button>
