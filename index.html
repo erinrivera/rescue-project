@@ -1,6 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
   <head>
     <title>Animal Care Society</title>
     <!-- Required meta tags -->
@@ -8,15 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/styles.css">  
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link href="css/styles.css" rel="stylesheet"> 
   </head>
 
+<!-- MAIN CONTENT -->
+
   <body>
-    <h1>Animal Care Society</h1>
+    <header>
+      <h1>Animal Care Society</h1>
+    </header>
+
+    <nav class="main-nav">
+      <div class="navbar">
+        <a href="#">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Adopt
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Adoption Rules</a>
+            <a href="#">See Our Adoptable Pets</a>
+            <a href="#">Adoption Application</a>
+          </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Donate
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Donate to ACS</a>
+              <a href="#">Become a Member</a>
+              <a href="#">Kroger Community Rewards</a>
+            </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">Ways to Help ACS
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Volunteer</a>
+                <a href="#">Sponsor-a-Pet</a>
+                <a href="#">Contribute to the Wish List</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">About ACS
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Our Mission</a>
+                <a href="#">Our Facility</a>
+                <a href="#">Our Newsletter</a>
+              </div>
+            </div>
+          <a href="#">Contact Us</a>
+      </div>
+    </nav>
+  
+    
 
   
     <!-- Script Files -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+
+<!-- FOOTER     -->
   </body>
 </html>
