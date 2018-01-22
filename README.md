@@ -1,2 +1,4 @@
 # rescue-project
-This project is a more modern website for Moreno Valley Animal Shelter.
+
+
+My goal is to make a more modern website for Animal Care Society, a no-kill shelter located here in Louisville, Kentucky.
