@@ -106,17 +106,45 @@ li a:hover:not(.active) {
 
 /********** MEDIA QUERIES **********/
 
-@media (max-width: 599px) {
+@media screen and (max-width: 1140px) {
 
-    .navbar {
-        width: 100%;
+   
+
+    #firstRow {
+        justify-content: space-between;
     }
 
-    .navbar a {
-        justify-content: center;
+    #firstRow > div {
+        flex: auto;
+        padding: 2em 1em;
+        margin: 1em 1em;
     }
-    .dropdown {
-        float: none;
-        width: 100%;
+
+    #firstRow > div > img {
+        max-width: 30%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    
+    body {
+        margin-top: 0;
+    }
+    ul {
+        position: relative;
+    }
+    ul li {
         text-align: center;
+        float: none;
+    }
+
+    #firstRow {
+        justify-content: space-between;
+    }
+
+    #firstRow > div {
+        padding: 0.5em;
+        margin: 0.5em;
+        flex: auto;
+    }
 }
