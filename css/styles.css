@@ -8,6 +8,7 @@ body {
     margin: 0 auto;
     background-color: #e5f3fa;
     color: #45454b;
+    margin-top: 50px;
 }
 
 
@@ -42,65 +43,35 @@ button {
 
 
 /********* NAVBAR STYLING ***********/
-.navbar {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     background-color: #333;
-    font-family: Arial;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.navbar a {
+li {
     float: left;
-    font-size: 16px;
+}
+
+li a {
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.dropdown {
-    float: left;
-    overflow: hidden;
+li a:hover:not(.active) {
+    background-color: #111;
 }
 
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #018fd3;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.active {
+    background-color: #4CAF50;
 }
 
 /********* PET DISPLAY PAGE STYLING ***********/
@@ -114,16 +85,15 @@ button {
 
 #firstRow > div {
     flex: 0 0 15%;
-    text-align: center;
+    text-align: left;
     padding: 1em 2em;
     background-color: #fff;
     margin: 1.5em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5%;
 }
-#firstRow > div > ul > li {
-    text-align: left;
-    list-style-type: none;
+#firstRow > div > h3 {
+    text-align: center;
 }
 
 #firstRow div img {
@@ -132,4 +102,21 @@ button {
     border-radius: 5%;
     border: 1px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/********** MEDIA QUERIES **********/
+
+@media (max-width: 599px) {
+
+    .navbar {
+        width: 100%;
+    }
+
+    .navbar a {
+        justify-content: center;
+    }
+    .dropdown {
+        float: none;
+        width: 100%;
+        text-align: center;
 }

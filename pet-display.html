@@ -16,52 +16,22 @@
 <!-- MAIN CONTENT -->        
 
     <body>
-            <nav class="main-nav">
-                    <div class="navbar">
-                      <a href="#">Home</a>
-                      <div class="dropdown">
-                        <button class="dropbtn">Adopt
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="#">Adoption Rules</a>
-                          <a href="#">See Our Adoptable Pets</a>
-                          <a href="#">Adoption Application</a>
-                        </div>
-                      </div>
-                      <div class="dropdown">
-                          <button class="dropbtn">Donate
-                          </button>
-                          <div class="dropdown-content">
-                            <a href="#">Donate to ACS</a>
-                            <a href="#">Become a Member</a>
-                            <a href="#">Kroger Community Rewards</a>
-                          </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropbtn">Ways to Help ACS
-                            </button>
-                            <div class="dropdown-content">
-                              <a href="#">Volunteer</a>
-                              <a href="#">Sponsor-a-Pet</a>
-                              <a href="#">Contribute to the Wish List</a>
-                            </div>
-                          </div>
-                          <div class="dropdown">
-                            <button class="dropbtn">About ACS
-                            </button>
-                            <div class="dropdown-content">
-                              <a href="#">Our Mission</a>
-                              <a href="#">Our Facility</a>
-                              <a href="#">Our Newsletter</a>
-                            </div>
-                          </div>
-                        <a href="#">Contact Us</a>
-                    </div>
-                  </nav>
-        <div class="pet-wrapper">
-            <div id="firstRow">
 
-            </div>
+        <!-- NAV BAR -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About ACS</a></li>
+            <li><a class="active" href="#">Adopt</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">How You Can Help</a></li>
+            <li><a href="#">Events</a></li>
+        </ul>
+        <!-- END NAV BAR -->
+
+        <h1>Adoptable Pets at Animal Care Society</h1>
+
+        <div class="pet-wrapper">
+            <div id="firstRow"> </div>
         </div>
 
 <!-- JAVASCRIPT -->
@@ -101,7 +71,7 @@
                     var petDiv = document.createElement("div");
                     var image = document.createElement("div");
                     var h3 = document.createElement("h3");
-                    var text = document.createElement("ul");
+                    var text = document.createElement("p");
 
                     //Assigns response info to variables
                     var name = pets[i].name.$t;
@@ -116,9 +86,9 @@
                     //Adds variables to elements
                     image.innerHTML = "<img src='"+ pic + "'>";
                     h3.innerHTML = name + " - ID#" + id;
-                    text.innerHTML += "<li>" + breed + " " + spec + "</li>";
-                    text.innerHTML += "<li>Gender: " + sex + "</li>";
-                    text.innerHTML += "<li>Approximate age: " + age + "</li>";
+                    text.innerHTML += "<b>" + breed + " " + spec + "</b><br>";
+                    text.innerHTML += "<b>Gender:</b> " + sex + "<br>";
+                    text.innerHTML += "<b>Approximate age:</b> " + age + "<br>";
                     
                     //Appends elements to DOM
                     start.appendChild(petDiv);
