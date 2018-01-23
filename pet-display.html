@@ -15,9 +15,49 @@
 
 <!-- MAIN CONTENT -->        
 
-        <h1>Adoptable Pets at Animal Care Society</h1>
-    </head>
     <body>
+            <nav class="main-nav">
+                    <div class="navbar">
+                      <a href="#">Home</a>
+                      <div class="dropdown">
+                        <button class="dropbtn">Adopt
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Adoption Rules</a>
+                          <a href="#">See Our Adoptable Pets</a>
+                          <a href="#">Adoption Application</a>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                          <button class="dropbtn">Donate
+                          </button>
+                          <div class="dropdown-content">
+                            <a href="#">Donate to ACS</a>
+                            <a href="#">Become a Member</a>
+                            <a href="#">Kroger Community Rewards</a>
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Ways to Help ACS
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="#">Volunteer</a>
+                              <a href="#">Sponsor-a-Pet</a>
+                              <a href="#">Contribute to the Wish List</a>
+                            </div>
+                          </div>
+                          <div class="dropdown">
+                            <button class="dropbtn">About ACS
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="#">Our Mission</a>
+                              <a href="#">Our Facility</a>
+                              <a href="#">Our Newsletter</a>
+                            </div>
+                          </div>
+                        <a href="#">Contact Us</a>
+                    </div>
+                  </nav>
         <div class="pet-wrapper">
             <div id="firstRow">
 
@@ -26,7 +66,7 @@
 
 <!-- JAVASCRIPT -->
         <script>
-
+// <!-- AJAX TO PULL PET INFO FROM PETFINDER -->
         function getPetInfo() {
             // Variables defined
             var apiKey = "925dcf328934c0d0fa7102b11a2b93b0";
@@ -61,9 +101,7 @@
                     var petDiv = document.createElement("div");
                     var image = document.createElement("div");
                     var h3 = document.createElement("h3");
-                    var par1 = document.createElement("p");
-                    var par2 = document.createElement("p");
-                    var par3 = document.createElement("p");
+                    var text = document.createElement("ul");
 
                     //Assigns response info to variables
                     var name = pets[i].name.$t;
@@ -73,28 +111,26 @@
                     var spec = pets[i].animal.$t;
                     var sex = pets[i].sex.$t;
                     var age = pets[i].age.$t;
-                    //var img = pets[i].media.photos.photo.8.$t;
+                    var desc = pets[i].description.$t;
 
                     //Adds variables to elements
                     image.innerHTML = "<img src='"+ pic + "'>";
                     h3.innerHTML = name + " - ID#" + id;
-                    par1.innerHTML = breed + spec;
-                    par2.innerHTML = "Gender: " + sex + "<br>";
-                    par3.innerHTML = "Approximate age: " + age + "<br>";
+                    text.innerHTML += "<li>" + breed + " " + spec + "</li>";
+                    text.innerHTML += "<li>Gender: " + sex + "</li>";
+                    text.innerHTML += "<li>Approximate age: " + age + "</li>";
                     
                     //Appends elements to DOM
                     start.appendChild(petDiv);
                     petDiv.appendChild(image);
                     petDiv.appendChild(h3);
-                    petDiv.appendChild(par1);
-                    petDiv.appendChild(par2);
-                    petDiv.appendChild(par3);
+                    petDiv.appendChild(text);
                 }
             }
         };
         
         getPetInfo();
-    
+// END AJAX PETFINDER CODE    
     </script>
     <!-- END JAVASCRIPT -->
 
