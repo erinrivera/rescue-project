@@ -7,8 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css"
-        <link href="css/styles.css" type="stylesheet">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
 
         <!-- Script Links -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -19,7 +18,7 @@
         <h1>Adoptable Pets at Animal Care Society</h1>
     </head>
     <body>
-        <div class="wrapper">
+        <div class="pet-wrapper">
             <div id="firstRow">
 
             </div>
@@ -60,7 +59,7 @@
                 for (var i = 0; i < pets.length; i++) {
                     var start = document.getElementById("firstRow");
                     var petDiv = document.createElement("div");
-                    var img = document.createElement("img"); //WONT WORK!!!
+                    var image = document.createElement("p"); //WONT WORK!!!
                     var h3 = document.createElement("h3");
                     var par1 = document.createElement("p");
                     var par2 = document.createElement("p");
@@ -68,6 +67,7 @@
 
                     //Assigns response info to variables
                     var name = pets[i].name.$t;
+                    var pic = pets[i].media.photos.photo["8"].$t;
                     var id = pets[i].shelterPetId.$t;
                     var breed = pets[i].breeds.breed.$t; //Need for loop?
                     var spec = pets[i].animal.$t;
@@ -76,7 +76,7 @@
                     //var img = pets[i].media.photos.photo.8.$t;
 
                     //Adds variables to elements
-                    img.innerHTML = img;
+                    image.innerHTML = "<img src='"+ pic + "'>";
                     h3.innerHTML = name + " - ID#" + id;
                     par1.innerHTML = breed + " " + spec;
                     par2.innerHTML = "Gender: " + sex + "<br>";
@@ -84,6 +84,7 @@
                     
                     //Appends elements to DOM
                     start.appendChild(petDiv);
+                    petDiv.appendChild(image);
                     petDiv.appendChild(h3);
                     petDiv.appendChild(par1);
                     petDiv.appendChild(par2);

@@ -14,7 +14,7 @@ function petDisplay() {
         },
         success: function( response ) {
             var data = [];
-            data = response.petfinder.pets.pet.[ ; 
+            data = response.petfinder.pets.pet; 
             console.log(data)
         }
     })
