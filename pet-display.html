@@ -59,7 +59,7 @@
                 for (var i = 0; i < pets.length; i++) {
                     var start = document.getElementById("firstRow");
                     var petDiv = document.createElement("div");
-                    var image = document.createElement("p"); //WONT WORK!!!
+                    var image = document.createElement("div");
                     var h3 = document.createElement("h3");
                     var par1 = document.createElement("p");
                     var par2 = document.createElement("p");
@@ -78,7 +78,7 @@
                     //Adds variables to elements
                     image.innerHTML = "<img src='"+ pic + "'>";
                     h3.innerHTML = name + " - ID#" + id;
-                    par1.innerHTML = breed + " " + spec;
+                    par1.innerHTML = breed + spec;
                     par2.innerHTML = "Gender: " + sex + "<br>";
                     par3.innerHTML = "Approximate age: " + age + "<br>";
                     

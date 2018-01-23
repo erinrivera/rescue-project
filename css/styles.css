@@ -1,17 +1,13 @@
 /********* VARIABLES ***********/
 
 /********* BASIC STYLES ***********/
-* {
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
 }
 
-header {
-
-}
 
 
 /********* FORM STYLES **********/
@@ -103,4 +99,27 @@ button {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/********* PET DISPLAY PAGE STYLING ***********/
+
+#firstRow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+
+#firstRow > div {
+    flex: 0 0 15%;
+    text-align: center;
+    padding: 1em;
+}
+
+#firstRow div img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
