@@ -61,7 +61,7 @@ button {
     
 }
 
-nav-list ul {
+.nav-list ul {
     width: 100%;
     text-align: center;
     margin: 0 auto;
@@ -134,7 +134,7 @@ li a:hover:not(.active) {
 
     /* NAVIGATION */
 
-    
+
 
     /* Adoptable Pet Display Page */
     #firstRow {
