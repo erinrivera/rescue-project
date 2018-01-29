@@ -8,6 +8,7 @@
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
         <!-- Script Links -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -17,8 +18,9 @@
 
     <body>
 
-        <!-- NAV BAR -->
-        <ul>
+    <!-- NAV BAR -->
+    <nav class="main-nav">
+        <ul class="nav-list">
             <li><a href="#">Home</a></li>
             <li><a href="#">About ACS</a></li>
             <li><a class="active" href="#">Adopt</a></li>
@@ -26,13 +28,16 @@
             <li><a href="#">How You Can Help</a></li>
             <li><a href="#">Events</a></li>
         </ul>
-        <!-- END NAV BAR -->
-
+    </nav>
+    <!-- END NAV BAR -->
+    <div class="pet-display-page-wrapper">
         <h1>Adoptable Pets at Animal Care Society</h1>
-
         <div class="pet-wrapper">
-            <div id="firstRow"> </div>
+            <div id="firstRow"> 
+
+            </div>
         </div>
+    </div>
 
 <!-- JAVASCRIPT -->
         <script>
@@ -86,7 +91,7 @@
                     //Adds variables to elements
                     image.innerHTML = "<img src='"+ pic + "'>";
                     h3.innerHTML = name + " - ID#" + id;
-                    text.innerHTML += "<b>" + breed + " " + spec + "</b><br>";
+                    text.innerHTML += "<strong>" + breed + " " + spec + "</strong><br>";
                     text.innerHTML += "<b>Gender:</b> " + sex + "<br>";
                     text.innerHTML += "<b>Approximate age:</b> " + age + "<br>";
                     
@@ -104,7 +109,7 @@
     </script>
     <!-- END JAVASCRIPT -->
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer>
         
     </footer>
