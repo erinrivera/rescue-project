@@ -4,22 +4,16 @@
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     margin: 0 auto;
-    background-color: #e5f3fa;
+    background-color: #fff;
     color: #45454b;
     
 }
 
-.main-header {
-   width: 100%;
-   height: 100vh;
-   background-color: #333;
-   background-image: url("https://static.pexels.com/photos/37401/dog-cute-pet.jpg");
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position-y: center;
-}
+/****************** HEADER STYLES ***************/
+
+
 
 .content-wrapper {
     margin: 20px;
@@ -47,7 +41,7 @@ body {
 
 /********* COMPONENTS ***********/
 button {
-    background-color: #4CAF50;
+    background-color: #1b79a8;
     border: none;
     color: white;
     padding: 16px 32px;
@@ -61,34 +55,33 @@ button {
 
 .nav-list {
     list-style-type: none;
-    margin: 0;
-    padding-left: 10%;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #1b79a8;
+    
 }
 
-.nav-list li {
-    float: left;
+nav-list ul {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
 }
+
 
 .nav-list li a {
     display: block;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1em 1em;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #0000ff8a;
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: #0000ff8A;
 }
 
 /********* PET DISPLAY PAGE STYLING ***********/
@@ -123,10 +116,27 @@ li a:hover:not(.active) {
 
 /********** MEDIA QUERIES **********/
 
-@media screen and (max-width: 1140px) {
+/* MEDIUM SCREENS */
+@media (min-width: 600px) {
 
+    /* BASIC STYLES */
+    
+    .main-header {
+        width: 100%;
+        height: 100vh;
+        background-color: #1b79a8;
+        background-image: url("https://static.pexels.com/photos/374906/pexels-photo-374906.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
    
 
+    /* NAVIGATION */
+
+    
+
+    /* Adoptable Pet Display Page */
     #firstRow {
         justify-content: space-between;
     }
@@ -142,19 +152,26 @@ li a:hover:not(.active) {
     }
 }
 
-@media screen and (max-width: 720px) {
+/* LARGE SCREENS */ 
+
+@media (min-width: 900px) {
     
+    /* BASIC STYLES */
     body {
         margin-top: 0;
     }
+
     ul {
         position: relative;
     }
+
     ul li {
         text-align: center;
         float: none;
     }
 
+
+    /* Adoptable Pet Page */
     #firstRow {
         justify-content: space-between;
     }
