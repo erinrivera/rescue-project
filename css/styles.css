@@ -83,6 +83,11 @@ li a:hover:not(.active) {
 
 /********* PET DISPLAY PAGE STYLING ***********/
 
+.pet-display-page-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
 #firstRow {
     display: flex;
     flex-flow: row wrap;
@@ -111,6 +116,12 @@ li a:hover:not(.active) {
     border-radius: 5%;
     border: 1px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pet-data {
+    width: 80%;
+    text-align: left;
+    margin: 2em;
 }
 
 
