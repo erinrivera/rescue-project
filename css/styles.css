@@ -88,23 +88,22 @@ li a:hover:not(.active) {
     margin: 0 auto;
 }
 
-#firstRow {
+#firstRow {  /* Starting container for pet display page */ 
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #firstRow > div {  /* pet card Div */
     display: flex;
     flex-flow: column nowrap;
     text-align: center;
-    padding: 1em 2em;
+    padding: 1em;
     background-color: #fff;
-    margin: 1.5em;
+    margin: 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5%;
 }
-
 
 #firstRow > div > h3 {
     text-align: center;
@@ -122,6 +121,15 @@ li a:hover:not(.active) {
     width: 80%;
     text-align: left;
     margin: 2em;
+}
+
+.read-pet {
+    width: 30%;
+    justify-content: center;
+}
+
+.read-pet button {
+    border-radius: 10%;
 }
 
 
@@ -181,10 +189,11 @@ li a:hover:not(.active) {
         justify-content: space-between;
     }
 
+    /* Pet Card Div */
     #firstRow > div {
-        flex: auto;
-        padding: 2em 1em;
-        margin: 1em 1em;
+        flex-basis: 45%;
+        padding: 1em;
+        margin: 1em;
     }
 
     #firstRow > div > img {
@@ -213,12 +222,12 @@ li a:hover:not(.active) {
 
     /* Adoptable Pet Page */
     #firstRow {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     #firstRow > div {
-        padding: 0.5em;
-        margin: 0.5em;
+        padding: 2em;
+        margin: 2em;
         flex: auto;
     }
 }
