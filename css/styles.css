@@ -1,3 +1,5 @@
+@import url("desktop.css");
+
 /********* VARIABLES ***********/
 
 /********* BASIC STYLES ***********/
@@ -15,9 +17,9 @@ body {
 }
 
 .content-wrapper {
-    display: block;
+    /* display: block; */
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     
 }
 
@@ -84,8 +86,9 @@ li a:hover:not(.active) {
 /********* PET DISPLAY PAGE STYLING ***********/
 
 .pet-display-page-wrapper {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    display: block;
 }
 
 #firstRow {  /* Starting container for pet display page */ 
@@ -97,12 +100,16 @@ li a:hover:not(.active) {
 #firstRow > div {  /* pet card Div */
     display: flex;
     flex-flow: column nowrap;
+    flex: 1 1 50%;
     text-align: center;
-    padding: 1em;
+    padding: 0.5em;
     background-color: #fff;
-    margin: 1em;
+    margin: 0.5em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
     border-radius: 5%;
+    line-height: 1.5;
 }
 
 #firstRow > div > h3 {
@@ -113,6 +120,7 @@ li a:hover:not(.active) {
     width: 90%;
     height: height;
     border-radius: 5%;
+    margin-top: 0.5em;
     border: 1px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -128,9 +136,6 @@ li a:hover:not(.active) {
     justify-content: center;
 }
 
-.read-pet button {
-    border-radius: 10%;
-}
 
 
 /********** MEDIA QUERIES **********/
@@ -143,6 +148,10 @@ li a:hover:not(.active) {
     .main-header {
         width: auto;
         height: 60vh;
+    }
+
+    .content-wrapper {
+        width: 80%;
     }
 
     .header-bkgd {
@@ -190,16 +199,19 @@ li a:hover:not(.active) {
     }
 
     /* Pet Card Div */
-    #firstRow > div {
-        flex-basis: 45%;
-        padding: 1em;
-        margin: 1em;
+    #firstRow > div {  /* pet card Div */
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 30%;
+        text-align: center;
+        padding: 0.5em;
+        background-color: #fff;
+        margin: 0.5em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5%;
+        line-height: 1.5;
     }
-
-    #firstRow > div > img {
-        max-width: 30%;
     }
-}
 
 /* LARGE SCREENS */ 
 
@@ -221,13 +233,21 @@ li a:hover:not(.active) {
     }
 
     /* Adoptable Pet Page */
+
     #firstRow {
         justify-content: space-around;
     }
 
-    #firstRow > div {
-        padding: 2em;
-        margin: 2em;
-        flex: auto;
+    #firstRow > div {  /* pet card Div */
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 0 0 20%;
+        text-align: center;
+        padding: 0.5em;
+        background-color: #fff;
+        margin: 0.5em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5%;
+        line-height: 1.5;
     }
 }

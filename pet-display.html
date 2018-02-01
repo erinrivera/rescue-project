@@ -116,16 +116,16 @@
                     petDiv.innerHTML=`
                         <div class="pet-image-div">
                             <img class="pet-image" src="${pic}">
-                        </div>
                             <span class="pet-name"><h2>${name} - ID: ${id}</h2></span>
+                        </div>
                         <div class="pet-data">
-                            <h3>${breed}</h3>
-                            <p><strong>Age:</strong> ${age}</p>
-                            <p><strong>Gender:</strong> ${gender}</p>
-                            <span class="pet-desc"><h4>Description:</h4><p> ${description}...</span></p>
+                            <strong>${breed}</strong><br>
+                            <strong>Age:</strong> ${age}<br>
+                            <strong>Gender:</strong> ${gender}<br>
+                            <span class="pet-desc"><strong>Description:</strong> ${description}...</span></p>
                         </div>
                         <div class="pet-button">
-                            <button>Read More</button>
+                            <button id="read-more-btn">Read More</button>
                         </div>
                         
                     `;
