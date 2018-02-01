@@ -63,16 +63,23 @@ button {
 }
 
 .nav-list ul {
-    justify-content: center;
+    justify-content: flex-end;
+    position: relative;
 }
 
 .nav-list li a {
     display: block;
     color: #fff;
-    text-align: center;
+    text-align: right;
     padding: 1em 1em;
     text-decoration: none;
     font-size: 1.2em;
+}
+
+.logo {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-left: 0;
 }
 
 li a:hover:not(.active) {
@@ -100,6 +107,7 @@ li a:hover:not(.active) {
 #firstRow > div {  /* pet card Div */
     display: flex;
     flex-flow: column nowrap;
+    align-content: space-around;
     flex: 1 1 50%;
     text-align: center;
     padding: 0.5em;

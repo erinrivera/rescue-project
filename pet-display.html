@@ -21,6 +21,7 @@
     <!-- NAV BAR -->
     <nav class="main-nav">
         <ul class="nav-list">
+            <li><a class="logo" href="#">Animal Care Society</a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">About ACS</a></li>
             <li><a class="active" href="#">Adopt</a></li>
@@ -116,7 +117,9 @@
                     petDiv.innerHTML=`
                         <div class="pet-image-div">
                             <img class="pet-image" src="${pic}">
-                            <span class="pet-name"><h2>${name} - ID: ${id}</h2></span>
+                        </div>
+                        <div class="pet-name">
+                            <h2>${name} - ID: ${id}</h2>
                         </div>
                         <div class="pet-data">
                             <strong>${breed}</strong><br>
