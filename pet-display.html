@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Stylesheets -->
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css" type="text/css">
 
         <!-- Script Links -->
@@ -17,8 +18,9 @@
 
     <body>
 
-        <!-- NAV BAR -->
-        <ul>
+    <!-- NAV BAR -->
+    <nav class="main-nav">
+        <ul class="nav-list">
             <li><a href="#">Home</a></li>
             <li><a href="#">About ACS</a></li>
             <li><a class="active" href="#">Adopt</a></li>
@@ -26,24 +28,34 @@
             <li><a href="#">How You Can Help</a></li>
             <li><a href="#">Events</a></li>
         </ul>
-        <!-- END NAV BAR -->
+    </nav>
+    <!-- END NAV BAR -->
 
+    <div class="pet-display-page-wrapper">
         <h1>Adoptable Pets at Animal Care Society</h1>
-
         <div class="pet-wrapper">
-            <div id="firstRow"> </div>
+            <div id="firstRow"> 
+
+            </div>
         </div>
+    </div>
 
 <!-- JAVASCRIPT -->
-        <script>
+    <script>
+
+// VARIABLES
+    var apiKey = "925dcf328934c0d0fa7102b11a2b93b0";
+    var url = 'http://api.petfinder.com/shelter.getPets';
+
+// FUNCTIONS
+
+        function shortDesc(str) {
+            return str.split(/\s+/).slice(0,10).join(" ");
+        }
+
 // <!-- AJAX TO PULL PET INFO FROM PETFINDER -->
         function getPetInfo() {
-            // Variables defined
-            var apiKey = "925dcf328934c0d0fa7102b11a2b93b0";
-            var url = 'http://api.petfinder.com/shelter.getPets';
-
             //AJAX Call to get pet data
-
             $.ajax({
                 url: url,
                 jsonp: "callback",
@@ -69,32 +81,55 @@
                 for (var i = 0; i < pets.length; i++) {
                     var start = document.getElementById("firstRow");
                     var petDiv = document.createElement("div");
-                    var image = document.createElement("div");
-                    var h3 = document.createElement("h3");
-                    var text = document.createElement("p");
 
                     //Assigns response info to variables
                     var name = pets[i].name.$t;
                     var pic = pets[i].media.photos.photo["8"].$t;
                     var id = pets[i].shelterPetId.$t;
-                    var breed = pets[i].breeds.breed.$t; //Need for loop?
+                    var breed = pets[i].breeds.breed.$t;
                     var spec = pets[i].animal.$t;
                     var sex = pets[i].sex.$t;
                     var age = pets[i].age.$t;
                     var desc = pets[i].description.$t;
+                    var description = shortDesc(desc);
+                    var mix = pets[i].mix.$t;
 
-                    //Adds variables to elements
-                    image.innerHTML = "<img src='"+ pic + "'>";
-                    h3.innerHTML = name + " - ID#" + id;
-                    text.innerHTML += "<b>" + breed + " " + spec + "</b><br>";
-                    text.innerHTML += "<b>Gender:</b> " + sex + "<br>";
-                    text.innerHTML += "<b>Approximate age:</b> " + age + "<br>";
-                    
-                    //Appends elements to DOM
-                    start.appendChild(petDiv);
-                    petDiv.appendChild(image);
-                    petDiv.appendChild(h3);
-                    petDiv.appendChild(text);
+                    //Variable if loops
+
+                    // Changes 'f' to 'female', and 'm' to 'male'
+                    if (sex === 'F') {
+                        var gender = 'Female';   
+                    } else {
+                        gender = 'Male';
+                    }
+
+                    // If breed is array, adds both breeds
+                    if (breed == undefined) {
+                        breed = pets[i].breeds.breed["0"].$t + "/" + pets[i].breeds.breed["1"].$t
+                    }
+
+                    // If 'mix' is yes, adds "mix" to the end of breed
+                    if (mix === 'yes') {
+                        breed = breed + " Mix";
+                    }
+
+                    petDiv.innerHTML=`
+                        <div class="pet-image-div">
+                            <img class="pet-image" src="${pic}">
+                            <span class="pet-name"><h2>${name} - ID: ${id}</h2></span>
+                        </div>
+                        <div class="pet-data">
+                            <strong>${breed}</strong><br>
+                            <strong>Age:</strong> ${age}<br>
+                            <strong>Gender:</strong> ${gender}<br>
+                            <span class="pet-desc"><strong>Description:</strong> ${description}...</span></p>
+                        </div>
+                        <div class="pet-button">
+                            <button id="read-more-btn">Read More</button>
+                        </div>
+                        
+                    `;
+                    start.appendChild(petDiv)
                 }
             }
         };
@@ -104,7 +139,7 @@
     </script>
     <!-- END JAVASCRIPT -->
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer>
         
     </footer>
