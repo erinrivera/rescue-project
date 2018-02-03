@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/modal.css">
 <style>
 /* The Modal (background) */
 .modal {
@@ -41,6 +42,7 @@
     text-decoration: none;
     cursor: pointer;
 }
+
 /* SLIDESHOW STYLING */
 
 * {box-sizing: border-box}
@@ -149,7 +151,7 @@ img {vertical-align: middle;}
 <!-- Trigger/Open The Modal -->
 <button id="myBtn">Open Modal</button>
 
-<!-- The Modal -->
+<!-- MODAL CONTAINER -->
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
@@ -192,6 +194,7 @@ img {vertical-align: middle;}
 </div>
 
 <script>
+// SCRIPT FOR MODAL 
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -218,6 +221,7 @@ window.onclick = function(event) {
     }
 }
 
+//SCRIPT FOR SLIDESHOW
 var slideIndex = 1;
 showSlides(slideIndex);
 
