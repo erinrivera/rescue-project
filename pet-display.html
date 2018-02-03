@@ -8,8 +8,8 @@
 
         <!-- Stylesheets -->
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css" type="text/css">
-        <link rel="stylesheet" href="css/mq.css" type="text/css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/mq.css">
         <!-- Script Links -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
@@ -32,14 +32,21 @@
     </nav>
     <!-- END NAV BAR -->
 
+<!-- MAIN CONTENT - TEXT -->
     <div class="pet-display-page-wrapper">
         <h1>Adoptable Pets at Animal Care Society</h1>
+
+        <p>Click on the pets to learn more about them. If you are interested in adopting a pet, 
+            you can fill out our <a href="application-form.html">Adoption Application</a>.
+        </p>
+
         <div class="pet-wrapper">
             <div id="firstRow"> 
 
             </div>
         </div>
     </div>
+<!-- END MAIN CONTENT -->
 
 <!-- JAVASCRIPT -->
     <script>
@@ -47,6 +54,7 @@
 // VARIABLES
     var apiKey = "925dcf328934c0d0fa7102b11a2b93b0";
     var url = 'http://api.petfinder.com/shelter.getPets';
+    var photoUrl = "http://photos.petfinder.com/photos/pets/";
 
 // FUNCTIONS
 
@@ -85,8 +93,10 @@
 
                     //Assigns response info to variables
                     var name = pets[i].name.$t;
-                    var pic = pets[i].media.photos.photo["8"].$t;
+                    var pfid = pets[i].id.$t;
+                    var pic = photoUrl + pfid + "/1/";
                     var id = pets[i].shelterPetId.$t;
+                    picArray = pets[i].media.photos.photo;
                     var breed = pets[i].breeds.breed.$t;
                     var spec = pets[i].animal.$t;
                     var sex = pets[i].sex.$t;
@@ -112,6 +122,21 @@
                     // If 'mix' is yes, adds "mix" to the end of breed
                     if (mix === 'yes') {
                         breed = breed + " Mix";
+                    }
+
+                    // Count photo array and create photos for modal slideshow
+                    if (picArray.length < 6) {
+                        var photo1 = photoUrl + pfid + "/1/";
+                    } else if (picArray.length < 11) {
+                        var photo2 = photoUrl + pfid + "/2/";
+                    } else if (picArray.length < 16) {
+                        var photo3 = photoUrl + pfid + "/3/";
+                    } else if (picArray.length < 21) {
+                        var photo4 = photoUrl + pfid + "/4/";
+                    } else if (picArray.length < 26) {
+                        var photo4 = photoUrl + pfid + "/5/";
+                    } else if (picArray.length < 31) {
+                        var photo5 = photoUrl + pfid + "/6/";
                     }
 
                     petDiv.innerHTML=`
