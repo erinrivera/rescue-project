@@ -90,6 +90,8 @@
                 for (var i = 0; i < pets.length; i++) {
                     var start = document.getElementById("firstRow");
                     var petDiv = document.createElement("div");
+                    var petModal = document.createElement("div");
+                    $(petModal).addClass("modal");
 
                     //Assigns response info to variables
                     var name = pets[i].name.$t;
@@ -123,20 +125,27 @@
                     if (mix === 'yes') {
                         breed = breed + " Mix";
                     }
-
+                    
                     // Count photo array and create photos for modal slideshow
+                    var photoList = [];
                     if (picArray.length < 6) {
                         var photo1 = photoUrl + pfid + "/1/";
+                        photoList.push(photo1);
                     } else if (picArray.length < 11) {
                         var photo2 = photoUrl + pfid + "/2/";
+                        photoList.push(photo2);
                     } else if (picArray.length < 16) {
                         var photo3 = photoUrl + pfid + "/3/";
+                        photoList.push(photo3);
                     } else if (picArray.length < 21) {
                         var photo4 = photoUrl + pfid + "/4/";
+                        photoList.push(photo4);
                     } else if (picArray.length < 26) {
                         var photo4 = photoUrl + pfid + "/5/";
+                        photoList.push(photo5);
                     } else if (picArray.length < 31) {
                         var photo5 = photoUrl + pfid + "/6/";
+                        photoList.push(photo6);
                     }
 
                     petDiv.innerHTML=`
@@ -153,9 +162,50 @@
                             <span class="pet-desc"><strong>Description:</strong> ${description}...</span></p>
                         </div>
                         <div class="pet-button">
-                            <button id="read-more-btn">Read More</button>
+                            <button id="btn${id}">Read More</button>
                         </div>
-                        
+                    `;
+
+                    petModal.innerHTML=`
+                    <!-- MODAL START -->
+                    <div class="modal-content">
+                    <span class="close">&times;</span>
+
+                    <!-- SLIDESHOW START -->
+                    <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src=${photo1}
+                            <div class="text"></div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="http://photos.petfinder.com/photos/pets/39952188/2/?bust=1512694204&width=300&-pn.jpg" style="width:100%">
+                            <div class="text"></div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="http://photos.petfinder.com/photos/pets/39961333/2/?bust=1512083546&width=300&-pn.jpg" style="width:100%">
+                            <div class="text"></div>
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            
+                            </div>
+                            <br>
+                            
+                            <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                            </div>
+                            <!-- SLIDESHOW END -->
+                    <p>Some text in the Modal..</p>
+                </div>
                     `;
                     start.appendChild(petDiv);
                 }
