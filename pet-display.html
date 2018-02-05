@@ -59,11 +59,6 @@
     var url = 'http://api.petfinder.com/shelter.getPets';
     var photoUrl = "http://photos.petfinder.com/photos/pets/";
 
-// FUNCTIONS
-
-        function shortDesc(str) {
-            return str.split(/\s+/).slice(0,10).join(" ");
-        }
 
 // <!-- AJAX TO PULL PET INFO FROM PETFINDER -->
         function getPetInfo() {
@@ -149,7 +144,7 @@
                             <span class="pet-desc"><strong>Description:</strong> ${description}...</span></p>
                         </div>
                         <div class="pet-button">
-                            <button id="btn${id}">Read More</button>
+                            <button id="${id}btn">Read More</button>
                         </div>
                     `
 
@@ -157,43 +152,45 @@
 
                     petModal.innerHTML=`
                     <!-- MODAL START -->
-                    <div class="modal-content">
-                    <span class="close">&times;</span>
+                    <div id="${id}modal" class="modal">
+                        <div class="modal-content">
+                        <span class="close">&times;</span>
 
-                    <!-- SLIDESHOW START -->
-                    <div class="slideshow-container">                   
-                        <div class="mySlides fade">
-                            <div class="numbertext">1 / 3</div>
-                            <img src="${pic1}" style="width:100%">
-                            <div class="text"></div>
-                            </div>
-                            
+                        <!-- SLIDESHOW START -->
+                        <div class="slideshow-container">                   
                             <div class="mySlides fade">
-                            <div class="${pic2}">2 / 3</div>
-                            <img src="http://photos.petfinder.com/photos/pets/39952188/2/?bust=1512694204&width=300&-pn.jpg" style="width:100%">
-                            <div class="text"></div>
-                            </div>
+                                <div class="numbertext">1 / 3</div>
+                                <img src="${pic1}" style="width:100%">
+                                <div class="text"></div>
+                                </div>
+                                
+                                <div class="mySlides fade">
+                                <div class="${pic2}">2 / 3</div>
+                                <img src="http://photos.petfinder.com/photos/pets/39952188/2/?bust=1512694204&width=300&-pn.jpg" style="width:100%">
+                                <div class="text"></div>
+                                </div>
+                                
+                                <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="${pic3}" style="width:100%">
+                                <div class="text"></div>
+                                </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
                             
-                            <div class="mySlides fade">
-                            <div class="numbertext">3 / 3</div>
-                            <img src="${pic3}" style="width:100%">
-                            <div class="text"></div>
                             </div>
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        
-                        </div>
-                        <br>
-                        
-                        <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
-                        <span class="dot" onclick="currentSlide(3)"></span> 
+                            <br>
+                            
+                            <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                            </div>
                         </div>
                         <!-- SLIDESHOW END -->
                     <p>Some text in the Modal..</p>
                     </div>
-                    `;
+                    `
                     
                     modalDiv.appendChild(petModal);
 
@@ -202,7 +199,57 @@
         };
         
         getPetInfo();
-// END AJAX PETFINDER CODE    
+// END AJAX PETFINDER CODE   
+
+        // MODAL CONTROLS
+        // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // CONTROLS FOR SLIDESHOW
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+       
     </script>
     <!-- END JAVASCRIPT -->
 
