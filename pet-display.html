@@ -101,7 +101,9 @@
                     //Assigns response info to variables
                     var name = pets[i].name.$t;
                     var pfid = pets[i].id.$t;
-                    var pic = photoUrl + pfid + "/1/";
+                    var pic1 = photoUrl + pfid + "/1/";
+                    var pic2 = photoUrl + pfid + "/2/";
+                    var pic3 = photoUrl + pfid + "/3/";
                     var id = pets[i].shelterPetId.$t;                    
                     var breed = pets[i].breeds.breed.$t;
                     var spec = pets[i].animal.$t;
@@ -110,6 +112,7 @@
                     var desc = pets[i].description.$t;
                     var description = shortDesc(desc);
                     var mix = pets[i].mix.$t;
+                    var picArray = pets[i].media.photos.photo;
                     var ssCode = '';
 
                     //Variable if loops
@@ -134,7 +137,7 @@
                    
                     petDiv.innerHTML=`
                         <div class="pet-image-div">
-                            <img class="pet-image" src="${pic}">
+                            <img class="pet-image" src="${pic1}">
                         </div>
                         <div class="pet-name">
                             <h2>${name} - ID: ${id}</h2>
@@ -148,11 +151,9 @@
                         <div class="pet-button">
                             <button id="btn${id}">Read More</button>
                         </div>
-                    `;
+                    `
 
                     start.appendChild(petDiv);
-                    
-                    
 
                     petModal.innerHTML=`
                     <!-- MODAL START -->
@@ -161,7 +162,23 @@
 
                     <!-- SLIDESHOW START -->
                     <div class="slideshow-container">                   
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="${pic1}" style="width:100%">
+                            <div class="text"></div>
+                            </div>
                             
+                            <div class="mySlides fade">
+                            <div class="${pic2}">2 / 3</div>
+                            <img src="http://photos.petfinder.com/photos/pets/39952188/2/?bust=1512694204&width=300&-pn.jpg" style="width:100%">
+                            <div class="text"></div>
+                            </div>
+                            
+                            <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="${pic3}" style="width:100%">
+                            <div class="text"></div>
+                            </div>
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
                         

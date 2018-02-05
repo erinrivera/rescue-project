@@ -25,7 +25,7 @@ function shortDesc(str) {
 }
 
 // Count photo array and create photos for modal slideshow
-function photoArray() {
+function photoArray(picArray, pfid) {
     var photoList = [];
     if (picArray.length < 6) {
         var photo1 = photoUrl + pfid + "/1/";
@@ -40,17 +40,18 @@ function photoArray() {
         var photo4 = photoUrl + pfid + "/4/";
         photoList.push(photo4);
     } else if (picArray.length < 26) {
-        var photo4 = photoUrl + pfid + "/5/";
+        var photo5 = photoUrl + pfid + "/5/";
         photoList.push(photo5);
     } else if (picArray.length < 31) {
-        var photo5 = photoUrl + pfid + "/6/";
+        var photo6 = photoUrl + pfid + "/6/";
         photoList.push(photo6);
     }
-
     // Create slideshow code for each picture
     for (var i = 0; i < photoList.length; i++) {
-        var picCode = "";
-        ssCode += picCode;
+        var ssCode = '';
+        ssCode += '<div class="mySlides fade"> \n';
+        ssCode += '<img src="' + photoList[i] + '" style="width:100%"> \n';
+        ssCode += '</div>';
         return ssCode;
     }
 };
