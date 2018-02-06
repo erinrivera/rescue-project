@@ -1,153 +1,126 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Lost Pet Notification <Form:get></Form:get></title>
-  </head>
-  <body>
-    <div class="wrapper">
-        <h1 class="page-title">Lost Pet Notification</h1>
-        <p>If you have lost a pet in the Moreno Valley area, please fill out the form below. We will notify you at the contact 
-            information you provide if your pet is found by or brought to our facility.</p>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mq.css">
 
-        <form action="#" method="#">
-            <div class=" form-group">
-                <fieldset>
-                    <div class="row">
-                       <div class="col-lg-12 section-title"> 
-                            <legend>Your Contact Information:</legend>
-                        </div>  
-                    </div>
 
-                    <div class="row first-row">
-                        <div class="col-lg-6"> 
-                            <label for="name">Full Name: </label>   
-                            <input class="form-control" type="text" name="address" id="address" required />
-                        </div>  
-                        <div class="col-lg-6"> 
-                            <label for="phone">Phone Number: </label>
-                            <input class="form-control" type="tel" name="phone" id="phone" required />
-                        </div>  
-                    </div>
-                    
-                    <div class="row lower-row">
-                        <div class="col-lg-6"> 
-                            <label for="address">Street Address: </label>
-                            <input class="form-control" type="text" name="address" id="address" />
-                        </div>  
-                        <div class="col-lg-6"> 
-                            <label for="email">Email address: </label>
-                            <input class="form-control" type="email" name="email" id="email" required />  
-                        </div>  
-                    </div>
+  <title>Adoption Application - Animal Care Society</title>
+</head>
 
-                    <div class="row lower-row">
-                        <div class="col-lg-5">
-                            <label for="city">City:</label>
-                            <input class="form-control" type="text" name="city" id="city" />
-                        </div>
-                        <div class="col-lg-3">
-                            <label for="state">State:</label>
-                            <input class="form-control" type="state" name="state" id="city" />
-                        </div>
-                        <div class="col-lg-4">
-                            <label for="zip">ZIP Code:</label>
-                            <input class="form-control" type="number" name="zip" id="zip">
-                        </div>
-                    </div>
-                </fieldset>
+<body>
 
-                <fieldset>
-                    <div class="row first-row">
-                        <div class="col-lg-12">
-                            <legend>Your Pet's Information:</legend>
-                        </div>
-                    </div>
-                    <div class="row lower-row">
-                        <div class="col-lg-4">
-                            <label for="pet-name">Pet's Name: </label>
-                            <input class="form-control" type="text" name="name" id="pet-name" required/>
-                        </div>
-                        <div class="col-lg-2">
-                            <label for="species">Species: </label><br>
-                            <select name="species" id="species" required/>
-                                <option value="dog">Dog</option>
-                                <option value="cat">Cat</option>
-                                <option id="other-species" value="other">Other</option>
-                            </select> 
-                        </div>
-                        <div class="col-lg-2">
-                            <label for="age">Age:</label>
-                            <input class="form-control" type="number" name="age" id="age">
-                        </div>
-                        <div class="col-lg-4">
-                            <label for="breed">Breed: </label>
-                            <input class="form-control" type="text" name="breed" id="breed" placeholder="Please list all known/suspected breeds if animal is a mix">
-                        </div>
-                    </div>
-                    <div class="row lower-row">
-                        <div class="col-lg-2">
-                            <label for="gender">Gender:</label>
-                            <select name="gender" id="gender" required>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="unsure">Unsure</option>
-                            </select>
-                        </div>
-                        
-                    </div>
-                    
-                
-                    <label for="color">Coat color: </label>
-                    <input type="text" name="color" id="color" required/><br>
-                    <label for="size">Pet Size:</label>
-                    <select name="size" id="size" required/><br>
-                        <option value="xs">Extra Small (under 10 lb.)</option>
-                        <option value="sm">Small (10-25 lb.)</option>
-                        <option value="md">Medium (25-50 lb.)</option>
-                        <option value="lg">Large (50-75 lb.)</option>
-                        <option value="xl">Medium (over 75 lb.)</option>
-                    </select>
-                    <p>
-                    <label for="gender">Gender: </label><br>
-                    <br>
-                    </p>
-                    <p>
-                    <label for="altered">Is pet spayed/neutered?: </label><br>
-                    <input type="radio" name="altered" id="altered" value="yes" required/>Yes
-                    <input type="radio" name="altered" id="altered" value="no" required/>No
-                    <input type="radio" name="altered" id="altered" value="unsure" required/>Unsure<br>
-                    </p>
-                    <p>
-                    <label for="last-seen">When and where was your pet last seen?</label><br>
-                    <textarea name="last-seen" id="last-seen" cols=50 rows=4></textarea>
-                    </p>
-                    <p>
-                    <label for="description">Please describe any unique traits that could help identify your pet:</label><br>
-                    <textarea name="description" id="description" cols=50 rows=4>Collar, clothing, unique physical traits, etc.</textarea>
-                    </p>        
-                </fieldset>
+  <!-- NAV BAR -->
+  <nav class="main-nav">
+    <ul class="nav-list">
+      <li>
+        <a class="logo" href="#">Animal Care Society</a>
+      </li>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About ACS</a>
+      </li>
+      <li>
+        <a href="#">Adopt</a>
+      </li>
+      <li>
+        <a href="#">Donate</a>
+      </li>
+      <li>
+        <a href="#">How You Can Help</a>
+      </li>
+      <li>
+        <a href="#">Events</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- END NAV BAR -->
 
-                <p>
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
-                </p>
-            </div>    
-        </form>
+  <div class="pet-display-page-wrapper">
 
-    </div>  
+    <h1>Adoption Application</h1>
+    <h4>If you are interested in adopting one of our available pets, please fill out the form below.</h4>
+    <p></p>
+
+    <form class="needs-validation" novalidate>
+      <fieldset>
+        <legend>Your Personal Information:</legend>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="fullname">Full name</label>
+          <input type="text" class="form-control" id="fullname" placeholder="" value="" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="" value="" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="phone">Phone</label>
+          <div class="input-group">
+            <input type="tel" class="form-control" id="phone" placeholder="" value="" required>
+            <div class="invalid-tooltip">
+              Please provide a valid phone number.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="address">Street Address</label>
+          <input type="text" class="form-control" id="address" placeholder="" required>
+          <div class="invalid-tooltip">
+            Please provide a valid street address.
+          </div>
+        </div>
+          <div class="col-md-4">
+            <label for="city">City</label>
+            <input type="text" class="form-control" id="city" placeholder="" required>
+            <div class="invalid-tooltip">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="zip">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <div class="invalid-tooltip">
+              Please provide a valid zip.
+            </div>
+          </div>
+        </div>
+      
+      </fieldset>
+
+        
+    <button class="btn btn-primary" type="submit">Submit form</button>
+        
+    </form>
+
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    
-  </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+      crossorigin="anonymous"></script>
+
+</body>
+
 </html>
