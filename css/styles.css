@@ -6,9 +6,11 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    width: auto;
     margin: 0 auto;
     background-color: #fff;
     color: #45454b;
+    box-sizing: border-box;
     
 }
 
@@ -21,6 +23,7 @@ body {
     width: 90%;
     
 }
+
 
 /********* FORM STYLES **********/
 
@@ -51,6 +54,7 @@ button {
 .main-nav {
     width: 100%;
     display: block;
+    margin: 0 auto;
 }
 
 .nav-list {
@@ -59,18 +63,20 @@ button {
     background-color: #1b79a8;
     display: block;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .nav-list ul {
-
+    display: block;
 }
 
 .nav-list li a {
     color: #fff;
     text-align: center;
-    padding: 1em 1em;
+    padding: .5em;
     text-decoration: none;
     font-size: 1.2em;
+    display: block;
 }
 
 .logo {
