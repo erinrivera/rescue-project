@@ -55,20 +55,17 @@ button {
 
 .nav-list {
     list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
+    padding: 1em 1em;
     background-color: #1b79a8;
     display: block;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .nav-list ul {
-    justify-content: flex-end;
-    position: relative;
+
 }
 
 .nav-list li a {
-    display: block;
     color: #fff;
     text-align: center;
     padding: 1em 1em;
