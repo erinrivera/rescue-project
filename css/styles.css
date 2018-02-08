@@ -6,12 +6,10 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    width: auto;
-    margin: 0 auto;
+    width: 80%;
     background-color: #fff;
     color: #45454b;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 
 .page-title {
@@ -19,17 +17,10 @@ body {
 }
 
 .content-wrapper {
+    width: 80%;
     margin: 0 auto;
-    width: 90%;   
 }
 
-footer {
-    width: 80%;
-    margin: 2em auto 0 auto;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-}
 
 /********* FORM STYLES **********/
 
@@ -161,11 +152,18 @@ li a:hover:not(.active) {
 /* ADOPTION APPLICATION STYLING */
 
 
-/* SOCIAL MEDIA ICONS */
+/* FOOTER */
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
 
 .soc-icons {
     flex-basis: 0 1 auto;
-
 }
 
 /* Style all font awesome icons */

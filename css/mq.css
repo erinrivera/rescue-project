@@ -41,6 +41,16 @@
     .content-wrapper {
         margin: 0 auto;
         width: 80%;
+        display: inline-block;
+
+    }
+
+    .first-col {
+        width: 60%;
+    }
+    
+    .second-col {
+        width: 20%;
     }
     
     /* NAVIGATION */
