@@ -1,57 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Animal Care Society</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet" >
-    <link href="css/mq.css" rel="stylesheet"> 
-  </head>
+<html>
+    <head>
+        <title>Animal Care Society</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- MAIN CONTENT -->
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link  href="css/mq.css" rel="stylesheet">
+        <!-- Script Links -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
 
-  <body>
+<!-- MAIN CONTENT -->        
 
-    <!-- NAV BAR -->
-    <nav class="main-nav">
-      <ul class="nav-list">
-        <li><a class="logo" href="index.html">Animal Care Society</a></li>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="about.html">About ACS</a></li>
-        <li><a href="pet-display.html">Adopt</a></li>
-        <li><a href="#">Donate</a></li>
-        <li><a href="#">Help ACS</a></li>
-        <li><a href="#">Events</a></li>
-      </ul>
-    </nav>
-    <!-- END NAV BAR -->
-      
-    <!-- BEGIN HEADER     -->
-    
-    <!-- END HEADER -->
-  
+    <body>
 
-    <!-- Script Files -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+        <!-- NAV BAR -->
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a class="logo" href="#">Animal Care Society</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About ACS</a></li>
+                <li><a class="active" href="#">Adopt</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="helpacs.html">Help ACS</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+        <!-- END NAV BAR -->
 
-    <!-- FOOTER     -->
-    <footer>
-      <div class="footer">
-        <div class="soc-icons">
-          <!-- Add font awesome icons -->
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-youtube"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-pinterest"></a>
-          
+    <!-- MAIN CONTENT - TEXT -->
+        <div class="pet-display-page-wrapper">
+            <h1>Adoptable Pets at Animal Care Society</h1>
+        
+
+        <p>Click on the pets to learn more about them. If you are interested in adopting a pet, 
+            you can fill out our <a href="adopt-form.html">Adoption Application</a>.
+        </p>
+
+        <div class="wrapper">
+
+            <!-- BEGIN ACCORDION -->
+            <div id="accordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Collapsible Group Item #1
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Collapsible Group Item #2
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Collapsible Group Item #3
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
         </div>
-      </div>
+        
+    </div>
+<!-- END MAIN CONTENT -->
+
+<!-- JAVASCRIPT -->
+    <script>
+
+// VARIABLES
+    var apiKey = "925dcf328934c0d0fa7102b11a2b93b0";
+    var url = 'http://api.petfinder.com/shelter.getPets';
+    var photoUrl = "http://photos.petfinder.com/photos/pets/";
+
+
+// <!-- AJAX TO PULL PET INFO FROM PETFINDER -->
+        function getPetInfo() {
+            //AJAX Call to get pet data
+            $.ajax({
+                url: url,
+                jsonp: "callback",
+                dataType: "jsonp",
+                data: {
+                    key: apiKey,
+                    id: 'KY30',
+                    format: 'json'
+                },
+                //AJAX error message
+                error: function() {
+                    alert("Error retrieving data. Please try again later.");
+                },
+                //AJAX success function (adds pets to data)
+                success: function( response ) {
+                    var pets = response.petfinder.pets.pet;
+                    createPetDivs(pets);
+                    console.log(pets) //debugging purposes
+                },
+            })
+
+            function createPetDivs(pets) {
+                //Create HTML elements for pet divs
+                for (var i = 0; i < pets.length; i++) {
+                    var start = document.getElementById("firstRow");
+                    var petDiv = document.createElement("div");        
+
+                    //Assigns response info to variables
+                    var name = pets[i].name.$t;
+                    var pfid = pets[i].id.$t;
+                    var pic1 = photoUrl + pfid + "/1/";
+                    var pic2 = photoUrl + pfid + "/2/";
+                    var pic3 = photoUrl + pfid + "/3/";
+                    var id = pets[i].shelterPetId.$t;                    
+                    var breed = pets[i].breeds.breed.$t;
+                    var spec = pets[i].animal.$t;
+                    var sex = pets[i].sex.$t;
+                    var age = pets[i].age.$t;
+                    var desc = pets[i].description.$t;
+                    var description = shortDesc(desc);
+                    var mix = pets[i].mix.$t;
+                    var picArray = pets[i].media.photos.photo;
+                    var ssCode = '';
+
+                    //Variable if loops
+
+                    // Changes 'f' to 'female', and 'm' to 'male'
+                    if (sex === 'F') {
+                        var gender = 'Female';   
+                    } else {
+                        gender = 'Male';
+                    }
+
+                    // If breed is array, adds both breeds
+                    if (breed == undefined) {
+                        breed = pets[i].breeds.breed["0"].$t + "/" + pets[i].breeds.breed["1"].$t
+                    }
+
+                    // If 'mix' is yes, adds "mix" to the end of breed
+                    if (mix === 'yes') {
+                        breed = breed + " Mix";
+                    }
+                    
+                   
+                    petDiv.innerHTML=`
+                        <div class="pet-image-div">
+                            <img class="pet-image" src="${pic1}">
+                        </div>
+                        <div class="pet-name">
+                            <h3>${name} - ID: ${id}</h3>
+                        </div>
+                        <div class="pet-data"  id="${id}div">
+                            <strong>${breed}</strong><br>
+                            <strong>Age:</strong> ${age}<br>
+                            <strong>Gender:</strong> ${gender}<br>
+                            <span class="pet-desc"><strong>Description:</strong> ${description}...</span></p>
+                        </div>
+                        <div class="pet-button">
+                            <button class="btn btn-primary" id="${id}btn" data-toggle="modal" data-target="#exampleModal">Read More</button>
+                        </div>
+                        <script>
+                            $("#${id}btn").click( function() {
+                                alert("hello")
+                            });
+                        <\/script>
+                    `
+
+                    // start.appendChild(petDiv);
+
+                }
+            }
+        };
+        
+        getPetInfo();
+// END AJAX PETFINDER CODE   
+
+        
+    </script>
+    <!-- END JAVASCRIPT -->
+
+    <!-- FOOTER -->
+    <footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
     </footer>
-  </body>
+    </body>
 </html>
