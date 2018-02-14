@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
         <link  href="css/mq.css" rel="stylesheet">
@@ -18,23 +19,51 @@
 
     <body>
 
-    <!-- NAV BAR -->
-    <nav class="main-nav">
-        <ul class="nav-list">
-            <li><a class="logo" href="#">Animal Care Society</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About ACS</a></li>
-            <li><a class="active" href="#">Adopt</a></li>
-            <li><a href="#">Donate</a></li>
-            <li><a href="#">Help ACS</a></li>
-            <li><a href="#">Events</a></li>
-        </ul>
-    </nav>
-    <!-- END NAV BAR -->
+        <!-- NAV BAR -->
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a class="logo" href="#">Animal Care Society</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About ACS</a></li>
+                <li><a class="active" href="#">Adopt</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="helpacs.html">Help ACS</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </nav>
+        <!-- END NAV BAR -->
 
-<!-- MAIN CONTENT - TEXT -->
-    <div class="pet-display-page-wrapper">
-        <h1>Adoptable Pets at Animal Care Society</h1>
+    <!-- MAIN CONTENT - TEXT -->
+        <div class="pet-display-page-wrapper">
+            <h1>Adoptable Pets at Animal Care Society</h1>
+        
+        <!-- added to petdiv -->
+        <!-- MODAL BUTTON 
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button> -->
+        
+        <!-- BEGIN MODAL -->
+        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" id="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>    -->
+        <!-- END MODAL     -->
 
         <p>Click on the pets to learn more about them. If you are interested in adopting a pet, 
             you can fill out our <a href="adopt-form.html">Adoption Application</a>.
@@ -132,15 +161,20 @@
                         <div class="pet-name">
                             <h2>${name} - ID: ${id}</h2>
                         </div>
-                        <div class="pet-data">
+                        <div class="pet-data"  id="${id}div">
                             <strong>${breed}</strong><br>
                             <strong>Age:</strong> ${age}<br>
                             <strong>Gender:</strong> ${gender}<br>
                             <span class="pet-desc"><strong>Description:</strong> ${description}...</span></p>
                         </div>
                         <div class="pet-button">
-                            <button id="${id}btn">Read More</button>
+                            <button class="btn btn-primary" id="${id}btn" data-toggle="modal" data-target="#exampleModal">Read More</button>
                         </div>
+                        <script>
+                            $("#${id}btn").click( function() {
+                                alert("hello")
+                            });
+                        <\/script>
                     `
 
                     start.appendChild(petDiv);
@@ -158,7 +192,9 @@
 
     <!-- FOOTER -->
     <footer>
-        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
     </footer>
     </body>
 </html>
