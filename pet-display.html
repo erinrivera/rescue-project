@@ -36,34 +36,6 @@
     <!-- MAIN CONTENT - TEXT -->
         <div class="pet-display-page-wrapper">
             <h1>Adoptable Pets at Animal Care Society</h1>
-        
-        <!-- added to petdiv -->
-        <!-- MODAL BUTTON 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Launch demo modal
-        </button> -->
-        
-        <!-- BEGIN MODAL -->
-        <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-                <div class="modal-body" id="modal-body">
-                ...
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-            </div>
-        </div>    -->
-        <!-- END MODAL     -->
 
         <p>Click on the pets to learn more about them. If you are interested in adopting a pet, 
             you can fill out our <a href="adopt-form.html">Adoption Application</a>.
@@ -152,7 +124,6 @@
                     if (mix === 'yes') {
                         breed = breed + " Mix";
                     }
-                    
                    
                     petDiv.innerHTML=`
                         <div class="pet-image-div">
@@ -170,11 +141,6 @@
                         <div class="pet-button">
                             <button class="btn btn-primary" id="${id}btn" data-toggle="modal" data-target="#exampleModal">Read More</button>
                         </div>
-                        <script>
-                            $("#${id}btn").click( function() {
-                                alert("hello")
-                            });
-                        <\/script>
                     `
 
                     start.appendChild(petDiv);
