@@ -157,6 +157,18 @@ li a:hover:not(.active) {
     justify-content: center;
 }
 
+/*  ALT PET DISPLAY PAGE STYLING */
+
+.title-div a{
+    margin: 0 auto;
+    display: inline-block;
+} 
+
+.icon {
+    width: 100px;
+    height: auto;
+}
+
 /* ADOPTION APPLICATION STYLING */
 
 
