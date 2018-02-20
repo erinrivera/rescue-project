@@ -86,11 +86,11 @@ button {
 }
 
 li a:hover:not(.active) {
-    background-color: #0000ff8a;
+    background-color: navy;
 }
 
 .active {
-    background-color: #0000ff8A;
+    background-color: navy;
 }
 
 /********* PET DISPLAY PAGE STYLING ***********/
@@ -117,6 +117,11 @@ li a:hover:not(.active) {
     align-items: flex-end;
 }
 
+.pet-image-div {
+    height: 300px;
+    align-content: flex-start;
+}
+
 #firstRow > div {  /* pet card Div */
     display: flex;
     flex-flow: column nowrap;
@@ -136,9 +141,13 @@ li a:hover:not(.active) {
     text-align: center;
 }
 
+#idNo {
+    color: gray;
+}
+
 #firstRow div img {
-    width: 85%;
-    height: auto;
+    max-width: 300px;
+    height: 90%;
     /* border-radius: 5%; */
     border: 1px solid #333;
     margin-top: 0.5em;

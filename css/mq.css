@@ -168,3 +168,12 @@
         text-decoration: none;
     }
 }
+
+/***** XL SCREENS ******/
+@media (min-width: 1200px) {
+
+    /* Pet card div */
+    #firstRow > div {
+        flex: 0 0 20%;
+    }
+}
