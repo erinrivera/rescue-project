@@ -166,6 +166,36 @@ li a:hover:not(.active) {
     justify-content: center;
 }
 
+/**********  LIGHTBOX ON PET PAGE **********/
+
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	border: 16px solid #333;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+}
+
 /*  ALT PET DISPLAY PAGE STYLING */
 
 .title-div a{
@@ -179,7 +209,6 @@ li a:hover:not(.active) {
 }
 
 /* ADOPTION APPLICATION STYLING */
-
 
 /* FOOTER */
 

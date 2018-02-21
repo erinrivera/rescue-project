@@ -139,8 +139,10 @@
                             <span class="pet-desc"><strong>Description:</strong> ${description}...</span></p>
                         </div>
                         <div class="pet-button">
-                            <button class="btn btn-primary" id="${id}btn" data-toggle="modal" data-target="#exampleModal">Read More</button>
+                            <button class="btn btn-primary" id="${id}btn" data-toggle="modal" data-target="#exampleModal"><a href = "javascript:void(0)" onclick = "document.getElementById('light${id}').style.display='block';document.getElementById('fade${id}').style.display='block'">Read More</a></button>
                         </div>
+		                <div id="light${id}" class="white_content">This is the lightbox content. <a href = "javascript:void(0)" onclick = "document.getElementById('light${id}').style.display='none';document.getElementById('fade${id}').style.display='none'">Close</a></div>
+		                <div id="fade${id}" class="black_overlay"></div>
                     `
 
                     start.appendChild(petDiv);
