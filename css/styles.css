@@ -159,6 +159,12 @@ li a:hover:not(.active) {
     width: 80%;
     text-align: left;
     margin: 2em;
+    
+}
+
+.pet-button a {
+    color: white;
+    text-decoration: none;
 }
 
 .read-pet {
@@ -170,7 +176,7 @@ li a:hover:not(.active) {
 
 .black_overlay{
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
@@ -184,7 +190,7 @@ li a:hover:not(.active) {
 
 .white_content {
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 25%;
 	left: 25%;
 	width: 50%;
