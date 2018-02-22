@@ -114,16 +114,17 @@ li a:hover:not(.active) {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: space-between;
 }
 
 .pet-image-div {
-    height: 300px;
-    align-content: flex-start;
+    height: 200px;
+    align-content: center;
 }
 
 #firstRow > div {  /* pet card Div */
     display: flex;
+    height: auto;
     flex-flow: column nowrap;
     align-content: space-around;
     flex: 1 1 50%;
@@ -191,15 +192,15 @@ li a:hover:not(.active) {
 .white_content {
 	display: none;
 	position: fixed;
-	top: 10%;
-	left: 10%;
-	width: 80%;
-	height: auto;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
 	padding: 16px;
 	border: 16px solid #333;
 	background-color: white;
 	z-index: 1002;
-	overflow: scroll;
+	overflow-x: scroll;
 }
 
 .lb-img-div {
@@ -208,13 +209,14 @@ li a:hover:not(.active) {
 }
 
 .lb-img {
-    height: 200px;
-    width: auto;
+    height: 300px;
     display: inline-block;
+    padding: 1em;
 }
 
 .lb-desc {
     font-size: 1.15em;
+    padding-top: 1em;
 }
 
 /*  ALT PET DISPLAY PAGE STYLING */

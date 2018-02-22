@@ -75,6 +75,7 @@
     /* Adoptable Pet Display Page */
     #firstRow {
         justify-content: space-between;
+        align-items: space-between;
     }
 
     /* Pet Card Div */
@@ -129,7 +130,8 @@
     /* Adoptable Pet Page */
 
     #firstRow {
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: space-between;
     }
 
     #firstRow > div {  /* pet card Div */
