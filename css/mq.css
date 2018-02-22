@@ -7,9 +7,16 @@
 @media (min-width: 640px) {
 
     /* BASIC STYLES */
+
+    body {
+        margin-top: 0;
+        width: auto;
+        line-height: 1em;
+    }
+
     .main-header {
         display: block;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         width: 100%;
         height: auto;
     }
@@ -40,6 +47,9 @@
 
     .content-wrapper {
         margin: 0 auto;
+        padding-top: 2em;
+        font-size: 1.25em;
+        line-height: 1.5em;
         width: 80%;
         display: flex;
         flex: 0 1 auto;
