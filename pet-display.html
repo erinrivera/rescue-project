@@ -148,7 +148,11 @@
 		                <div id="light${id}" class="white_content">
                             <div class="pet-lightbox"> 
                                 <h2>${name} - <span id="idNo">ID: ${id}</span></h2>
-                                
+                                <div class="lb-img-div">
+                                    <div class="lb-img"> <img src="${pic1}"> </div> 
+                                    <div class="lb-img"> <img src="${pic2}"> </div>
+                                    <div class="lb-img"> <img src="${pic3}"> </div>
+                                </div>
                                 <h4> ${breed} -- ${gender} -- ${age}</h4>
                                 <p class="lb-desc"> Description: ${desc}</p>
                             </div>
@@ -165,7 +169,13 @@
         
         getPetInfo();
 // END AJAX PETFINDER CODE   
-
+        $('.fade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+        });
         
     </script>
     <!-- END JAVASCRIPT -->

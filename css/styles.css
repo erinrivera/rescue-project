@@ -158,8 +158,7 @@ li a:hover:not(.active) {
 .pet-data {
     width: 80%;
     text-align: left;
-    margin: 2em;
-    
+    margin: 2em; 
 }
 
 .pet-button a {
@@ -191,15 +190,30 @@ li a:hover:not(.active) {
 .white_content {
 	display: none;
 	position: fixed;
-	top: 25%;
-	left: 25%;
-	width: 50%;
-	height: 50%;
+	top: 12%;
+	left: 12%;
+	width: 75%;
+	height: auto;
 	padding: 16px;
 	border: 16px solid #333;
 	background-color: white;
 	z-index: 1002;
 	overflow: auto;
+}
+
+.lb-img-div {
+    width: 90%;
+    justify-content: center;
+}
+
+.lb-img {
+    height: 200px;
+    width: auto;
+    padding-right: 4em;
+}
+
+.lb-desc {
+    font-size: 1.15em;
 }
 
 /*  ALT PET DISPLAY PAGE STYLING */
