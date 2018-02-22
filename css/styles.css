@@ -184,21 +184,22 @@ li a:hover:not(.active) {
 	z-index:1001;
 	-moz-opacity: 0.8;
 	opacity:.80;
-	filter: alpha(opacity=80);
+    filter: alpha(opacity=80);
+    overflow: hidden;
 }
 
 .white_content {
 	display: none;
 	position: fixed;
-	top: 12%;
-	left: 12%;
-	width: 75%;
+	top: 10%;
+	left: 10%;
+	width: 80%;
 	height: auto;
 	padding: 16px;
 	border: 16px solid #333;
 	background-color: white;
 	z-index: 1002;
-	overflow: auto;
+	overflow: scroll;
 }
 
 .lb-img-div {
@@ -209,7 +210,7 @@ li a:hover:not(.active) {
 .lb-img {
     height: 200px;
     width: auto;
-    padding-right: 4em;
+    display: inline-block;
 }
 
 .lb-desc {
