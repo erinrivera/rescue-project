@@ -50,20 +50,51 @@
         padding-top: 2em;
         font-size: 1.25em;
         line-height: 1.5em;
-        width: 80%;
-        display: flex;
-        flex: 0 1 auto;
-        justify-content: space-evenly;
+        width: 80%
     }
 
-    .first-col {
-        width: 60%;
+    /*************** MAIN GRID AREA - INDEX PAGE ************************/
+
+    .item-a {
+        grid-area: item-a;
+    }
+
+    .item-b {
+        grid-area: item-b;
+    }
+
+    .item-c {
+        grid-area: item-c;
+    }
+
+    .main-col {
+        grid-area: main;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .footer-bar {
+        grid-area: footer-bar;
+        justify-self: center;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr auto 1fr;
+        grid-column-gap: 2em;
+        grid-row-gap: 2em;
+        justify-items: start;
+        grid-template-areas: 
+        "item-a item-b item-c"
+        "main main sidebar"
+        "footer-bar footer-bar footer-bar";
     }
     
-    .second-col {
-        width: 20%;
-    }
     
+
     /* NAVIGATION */
     
 
