@@ -24,6 +24,10 @@ function shortDesc(str) {
     return str.split(/\s+/).slice(0,10).join(" ");
 }
 
+function longDesc(str) {
+    return str.split(/\s+/).slice(0,100).join(" ");
+}
+
 function createScript(id) {
     var petScript = `
         <script>
