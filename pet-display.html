@@ -9,11 +9,14 @@
         <!-- Stylesheets -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/>
         <link href="css/styles.css" rel="stylesheet">
         <link  href="css/mq.css" rel="stylesheet">
         <!-- Script Links -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
+				
 
 <!-- MAIN CONTENT -->        
 
@@ -141,7 +144,16 @@
                         <div class="pet-button">
                             <button class="btn btn-primary" id="${id}btn" data-toggle="modal" data-target="#exampleModal"><a href = "javascript:void(0)" onclick = "document.getElementById('light${id}').style.display='block';document.getElementById('fade${id}').style.display='block'">Read More</a></button>
                         </div>
-		                <div id="light${id}" class="white_content">This is the lightbox content. <a href = "javascript:void(0)" onclick = "document.getElementById('light${id}').style.display='none';document.getElementById('fade${id}').style.display='none'">Close</a></div>
+
+		                <div id="light${id}" class="white_content">
+                            <div class="pet-lightbox"> 
+                                <h2>${name} - <span id="idNo">ID: ${id}</span></h2>
+                                
+                                <h4> ${breed} -- ${gender} -- ${age}</h4>
+                                <p class="lb-desc"> Description: ${desc}</p>
+                            </div>
+                            <a href = "javascript:void(0)" onclick = "document.getElementById('light${id}').style.display='none';document.getElementById('fade${id}').style.display='none'">Close</a>
+                        </div>
 		                <div id="fade${id}" class="black_overlay"></div>
                     `
 
