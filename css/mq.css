@@ -14,6 +14,15 @@
         line-height: 1em;
     }
 
+    .page-title {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1.5em;
+        margin-bottom: 0.75em;
+    }
+
     .main-header {
         display: block;
         /* margin: 0 auto; */
@@ -34,23 +43,6 @@
 
     }
 
-    .page-title{  /* H1 in Header */
-        padding: 25px;
-        z-index: 20;
-        color: black;
-        font-size: 4.5em;
-        opacity: 0.99;
-        margin-top: -7em;
-        margin-left: 1em;
-        margin-bottom: 6em;
-    }
-
-    .subtitle {
-        font-size: 3em;
-        color: black;
-        margin: -2.5em 0 2em 2em;
-    }
-
     .content-wrapper {
         margin: 0 auto;
         padding-top: 2em;
@@ -60,6 +52,16 @@
     }
 
     /*************** MAIN GRID AREA - INDEX PAGE ************************/
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .item-img {
+        margin: auto;
+    }
 
     .item-a {
         grid-area: item-a;
@@ -71,6 +73,10 @@
 
     .item-c {
         grid-area: item-c;
+    }
+
+    .item-img img{
+        border-radius: 50%;
     }
 
     .main-col {
@@ -86,22 +92,21 @@
         justify-self: center;
     }
 
+    /* GRID CONTAINER */
     .main-grid {
         margin-top: 2em;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 2fr auto 1fr;
         grid-column-gap: 2em;
-        grid-row-gap: 2em;
-        justify-items: start;
+        grid-row-gap: 3em;
+        justify-items: center;
         grid-template-areas: 
         "item-a item-b item-c"
         "main main sidebar"
         "footer-bar footer-bar footer-bar";
     }
     
-    
-
     /* NAVIGATION */
     
 
@@ -173,6 +178,24 @@
     body {
         margin-top: 0;
         width: auto;
+    }
+
+    .page-title{  /* H1 in Header */
+        padding: 25px;
+        z-index: 20;
+        color: black;
+        font-size: 4.5rem;
+        opacity: 0.99;
+        margin-top: -7em;
+        margin-left: 1em;
+        margin-bottom: 6em;
+    }
+
+    .subtitle {
+        font-size: 2.5em;
+        color: #333;
+        margin: -3em 0 2em 2em;
+        opacity: 0.8;
     }
 
 
