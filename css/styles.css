@@ -80,6 +80,13 @@ textarea {
     width: 100%;
 }
 
+.address-icon img,
+.phone-icon img {
+    height: 50px;
+    width: auto;
+}
+
+
 /********* NAVBAR STYLING ***********/
 .main-nav {
     width: 100%;
@@ -252,6 +259,11 @@ textarea {
 }
 
 /***************** CONTACT PAGE STYLING *******************************/
+
+.address-info,
+.phone-info {
+    font-size: 28px;
+}
 
 #map-sm {
     display: block;

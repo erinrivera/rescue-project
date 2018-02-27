@@ -49,7 +49,9 @@
         width: 80%
     }
 
-    /*************** MAIN GRID AREA - INDEX PAGE ************************/
+    /*************** INDEX PAGE ************************/
+
+    /* GRID CONTAINER - INDEX PAGE */
 
     .item {
         display: flex;
@@ -90,7 +92,7 @@
         justify-self: center;
     }
 
-    /* GRID CONTAINER - INDEX PAGE */
+    
     .main-grid {
         margin-top: 0.5em;
         display: grid;
@@ -124,6 +126,7 @@
     .nav-list li a {
         margin-top: 0.5em;
         line-height: 1.5em;
+        margin-bottom: 0.25em;
     }
 
     li a:hover:not(.active) {
@@ -159,6 +162,10 @@
     
     /******* Contact Page Styling *******/
 
+    .contact-title {
+        grid-area: title;
+        
+    }
     .contact-info {
         grid-area: info;
     }
@@ -178,6 +185,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
+            "title title"
             "info message"
             "map map";
         justify-items: left;
@@ -277,7 +285,7 @@
     }
 
     .logo img {
-        display: inline-block;
+        display: block;
         height: 100px;
         margin-top: 4px;
         padding-right: 5em;
