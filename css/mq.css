@@ -122,7 +122,8 @@
     }
 
     .nav-list li a {
-        margin-top: 1.5em;
+        margin-top: 0.5em;
+        line-height: 1.5em;
     }
 
     li a:hover:not(.active) {
@@ -134,9 +135,7 @@
     }
     
     .logo img {
-        height: 100px;
-        margin-top: 4px;
-        padding-right: 5em;
+        display: none;
     }
 
     /* Adoptable Pet Display Page */
@@ -159,11 +158,6 @@
     }
 
     /***************** CONTACT PAGE STYLING *******************************/
-
-    #map {
-        height: 400px;
-        width: 100%;
-    }
 
     /* FOOTER */
 
@@ -235,6 +229,13 @@
         background-position: center center;
         opacity: 0.5;
         z-index: -4;
+    }
+
+    .logo img {
+        display: inline-block;
+        height: 100px;
+        margin-top: 4px;
+        padding-right: 5em;
     }
 
     /* Adoptable Pet Page */

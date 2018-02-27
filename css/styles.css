@@ -96,10 +96,7 @@ button {
     display: block;
 }
 
-.logo {
-    margin-top: 0;
-    margin-left: 0;
-}
+
 
 /********* PET DISPLAY PAGE STYLING ***********/
 
@@ -232,11 +229,15 @@ button {
 
 /* CONTACT PAGE STYLING */
 
+.contact-grid {
+    display: grid;
+    justify-items: center;
+}
+
 /***************** CONTACT PAGE STYLING *******************************/
 
 #map {
-    height: 400px;
-    width: 100%;
+    background-color: navy;
 }
 
 /* FOOTER */
