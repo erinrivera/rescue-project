@@ -159,6 +159,30 @@
     
     /******* Contact Page Styling *******/
 
+    .contact-info {
+        grid-area: info;
+    }
+
+    .message-box {
+        grid-area: message;
+    }
+
+    .map-div {
+        grid-area: map;
+        justify-self: center;
+        margin: 2em 0;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "info message"
+            "map map";
+        justify-items: left;
+    }
+
     #map-sm {
         display: none;
         border: 3px solid var(--primary-blue);
@@ -173,6 +197,12 @@
         display: none;
         border: 5px solid var(--primary-blue);
     }
+
+    .message-box input{
+        width: 100%;
+    }
+
+    
 
     /* FOOTER */
 

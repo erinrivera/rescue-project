@@ -74,6 +74,12 @@ button {
     cursor: pointer;
 }
 
+input,
+textarea {
+    padding: 0.5em;
+    width: 100%;
+}
+
 /********* NAVBAR STYLING ***********/
 .main-nav {
     width: 100%;
@@ -84,7 +90,6 @@ button {
 
 .nav-list {
     list-style-type: none;
-    /* padding: 1em 1em; */
     background-color: #1b79a8;
     display: block;
     justify-content: space-between;
