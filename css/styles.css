@@ -101,14 +101,6 @@ button {
     margin-left: 0;
 }
 
-/* li a:hover:not(.active) {
-    background-color: navy;
-}
-
-.active {
-    background-color: navy;
-} */
-
 /********* PET DISPLAY PAGE STYLING ***********/
 
 .pet-display-page-wrapper {
@@ -236,19 +228,16 @@ button {
     padding-top: 1em;
 }
 
-/*  ALT PET DISPLAY PAGE STYLING */
-
-.title-div a{
-    margin: 0 auto;
-    display: inline-block;
-} 
-
-.icon {
-    width: 100px;
-    height: auto;
-}
-
 /* ADOPTION APPLICATION STYLING */
+
+/* CONTACT PAGE STYLING */
+
+/***************** CONTACT PAGE STYLING *******************************/
+
+#map {
+    height: 400px;
+    width: 100%;
+}
 
 /* FOOTER */
 

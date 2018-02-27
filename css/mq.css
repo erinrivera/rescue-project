@@ -158,6 +158,13 @@
         line-height: 1.5;
     }
 
+    /***************** CONTACT PAGE STYLING *******************************/
+
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+
     /* FOOTER */
 
     footer {

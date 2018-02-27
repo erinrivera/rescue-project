@@ -23,9 +23,9 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About ACS</a></li>
         <li><a href="pet-display.html">Adopt</a></li>
-        <li><a href="#">Donate</a></li>
-        <li><a href="#">Help ACS</a></li>
-        <li><a class="active" href="#">Contact</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="help-acs.html">Help ACS</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <!-- END NAV BAR -->
@@ -35,7 +35,23 @@
     <!-- END HEADER -->
 
     <!-- BEGIN MAIN CONTENT -->
+    <div class="content-wrapper">
+      <div class="contact-grid">
+        <div class="contact-info">
+          
 
+        </div>
+        <div class="message-box">
+
+
+        </div>
+        <div id="map"></div>
+          
+          
+        </div>
+
+      </div>
+    </div>
 
 
     <!-- END MAIN CONTENT -->
@@ -45,6 +61,20 @@
     <!-- Script Files -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        function initMap() {
+          var acsAddress = {lat: 38.3050212, lng: -85.5258917};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 17,
+            center: acsAddress
+          });
+          var marker = new google.maps.Marker({
+            position: acsAddress,
+            map: map
+          });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRWe0pPF7hHrNl8artZpnRnVgk3OCkWS8&callback=initMap"></script>
 
     <!-- FOOTER     -->
     <footer>
