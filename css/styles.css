@@ -2,6 +2,15 @@
 
 /********* VARIABLES ***********/
 
+:root {
+    --primary-blue: #1b79a8;
+    --dark-gray: #45454b;
+    --accent-navy: navy; 
+    --white: #fff;
+
+
+}
+
 /********* BASIC STYLES ***********/
 
 body {
@@ -10,7 +19,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     width: 100%;
     background-color: #fff;
-    color: #45454b;
+    color: var(--dark-gray);
 }
 
 a {
@@ -56,7 +65,7 @@ a {
 
 /********* COMPONENTS ***********/
 button {
-    background-color: #1b79a8;
+    background-color: var(--primary-blue);
     border: none;
     color: white;
     padding: 16px 32px;
@@ -96,6 +105,9 @@ button {
     display: block;
 }
 
+.logo {
+    display: none;
+}
 
 
 /********* PET DISPLAY PAGE STYLING ***********/
@@ -156,7 +168,7 @@ button {
     max-width: 300px;
     height: 90%;
     /* border-radius: 5%; */
-    border: 1px solid #333;
+    border: 1px solid var(--dark-gray);
     margin-top: 0.5em;
     padding: 7px;
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
@@ -203,7 +215,7 @@ button {
 	width: 90%;
 	height: 90%;
 	padding: 16px;
-	border: 16px solid #333;
+	border: 16px solid var(--dark-gray);
 	background-color: white;
 	z-index: 1002;
 	overflow-x: scroll;
@@ -236,8 +248,20 @@ button {
 
 /***************** CONTACT PAGE STYLING *******************************/
 
-#map {
-    background-color: navy;
+#map-sm {
+    display: block;
+    border: 3px solid var(--primary-blue);
+    margin: 1em 0;
+}
+
+#map-md {
+    display: none;
+    border: 5px solid var(--primary-blue);
+}
+
+#map-lg {
+    display: none;
+    border: 5px solid var(--primary-blue);
 }
 
 /* FOOTER */

@@ -156,8 +156,23 @@
         border-radius: 5%;
         line-height: 1.5;
     }
+    
+    /******* Contact Page Styling *******/
 
-    /***************** CONTACT PAGE STYLING *******************************/
+    #map-sm {
+        display: none;
+        border: 3px solid var(--primary-blue);
+    }
+
+    #map-md {
+        display: block;
+        border: 5px solid var(--primary-blue);
+    }
+
+    #map-lg {
+        display: none;
+        border: 5px solid var(--primary-blue);
+    }
 
     /* FOOTER */
 
@@ -255,6 +270,23 @@
         margin: 0.5em;
         border-radius: 5%;
         line-height: 1.5;
+    }
+
+    /* CONTACT PAGE STYLING */
+
+    #map-sm {
+        display: none;
+        border: 3px solid var(--primary-blue);
+    }
+
+    #map-md {
+        display: none;
+        border: 5px solid var(--primary-blue);
+    }
+
+    #map-lg {
+        display: block;
+        border: 5px solid var(--primary-blue);
     }
 
     /* FOOTER */
