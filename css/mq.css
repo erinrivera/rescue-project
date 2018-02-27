@@ -90,7 +90,7 @@
         justify-self: center;
     }
 
-    /* GRID CONTAINER */
+    /* GRID CONTAINER - INDEX PAGE */
     .main-grid {
         margin-top: 0.5em;
         display: grid;
@@ -106,9 +106,7 @@
     }
     
     /* NAVIGATION */
-    
-
-    .nav-list {
+        .nav-list {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
@@ -125,6 +123,14 @@
 
     .nav-list li a {
         margin-top: 1.5em;
+    }
+
+    li a:hover:not(.active) {
+        border-bottom: 5px solid navy;
+    }
+    
+    .active {
+        border-bottom: 5px solid navy;
     }
     
     .logo img {

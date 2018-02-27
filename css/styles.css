@@ -101,13 +101,13 @@ button {
     margin-left: 0;
 }
 
-li a:hover:not(.active) {
+/* li a:hover:not(.active) {
     background-color: navy;
 }
 
 .active {
     background-color: navy;
-}
+} */
 
 /********* PET DISPLAY PAGE STYLING ***********/
 
