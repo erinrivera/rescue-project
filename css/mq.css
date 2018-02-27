@@ -43,7 +43,7 @@
 
     .content-wrapper {
         margin: 0 auto;
-        padding-top: 1em;
+        padding-top: 5em;
         font-size: 1.25em;
         line-height: 1.5em;
         width: 80%
@@ -123,6 +123,16 @@
         flex: 0 1 auto;
     }
 
+    .nav-list li a {
+        margin-top: 1.5em;
+    }
+    
+    .logo img {
+        height: 100px;
+        margin-top: 4px;
+        padding-right: 5em;
+    }
+
     /* Adoptable Pet Display Page */
     #firstRow {
         justify-content: space-between;
@@ -191,7 +201,7 @@
     .subtitle {
         font-size: 2.5em;
         color: #333;
-        margin: -5em 0 7.5em 2em;
+        margin: -4em 0 7em 4em;
         opacity: 0.8;
     }
 
@@ -213,9 +223,6 @@
         opacity: 0.5;
         z-index: -4;
     }
-
-    
-
 
     /* Adoptable Pet Page */
 
