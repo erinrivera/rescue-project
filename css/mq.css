@@ -156,7 +156,7 @@
         line-height: 1.5;
     }
     
-    /******* Contact Page Styling *******/
+    /******* CONTACT PAGE  *******/
 
     .contact-title {
         grid-area: title;
@@ -206,7 +206,11 @@
         width: 100%;
     }
 
-    
+    /*********************** ABOUT PAGE STYLING ************************/
+
+    .about-image {
+        float: right;
+    }
 
     /* FOOTER */
 

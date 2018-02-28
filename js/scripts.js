@@ -1,3 +1,5 @@
+// PET DISPLAY PAGE
+
 function petDisplay() {
     // Variables defined
     var apiKey = "925dcf328934c0d0fa7102b11a2b93b0";
@@ -41,4 +43,25 @@ function createScript(id) {
         
         </script>
     `
+}
+
+// ABOUT PAGE
+
+//Accordion
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Bkgd color for active question */
+        this.classList.toggle("acc-active");
+
+        /* Hides/shows panel answer when clicked */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
 }
