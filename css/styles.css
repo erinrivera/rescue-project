@@ -176,7 +176,7 @@ textarea {
     color: gray;
 }
 
-#firstRow div img {
+.pet-image {
     max-width: 300px;
     height: 90%;
     /* border-radius: 5%; */
@@ -235,13 +235,21 @@ textarea {
 
 .lb-img-div {
     margin: 0.5em 1em;
+    height: auto;
     justify-content: center;
+    display: inline-block;
+    padding-bottom: 2em;
 }
 
 .lb-img {
     height: 300px;
     display: inline-block;
-    padding: 1em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+.lb-img img {
+    height: 300px;
 }
 
 .lb-desc {
