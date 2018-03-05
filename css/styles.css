@@ -291,6 +291,15 @@ textarea {
 /************************** ABOUT PAGE STYLING *************************/
 
 /* Question panels on accordion */
+.about-heading {
+    font-size: 1.2em;
+    color: var(--dark-gray);
+    margin: 1em 0;
+}
+
+.about-text {
+    font-size: 0.9em;
+}
 
 .accordion-div {
     margin-top: 3em;
