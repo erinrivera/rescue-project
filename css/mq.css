@@ -284,13 +284,6 @@
         z-index: -4;
     }
 
-    .logo img {
-        display: block;
-        height: 100px;
-        margin-top: 4px;
-        padding-right: 5em;
-    }
-
     /* Adoptable Pet Page */
 
     #firstRow {
@@ -308,6 +301,11 @@
         margin: 0.5em;
         border-radius: 5%;
         line-height: 1.5;
+    }
+
+    .lb-img-div img {
+        max-width: 300px;
+        height: auto;
     }
 
     /* CONTACT PAGE STYLING */

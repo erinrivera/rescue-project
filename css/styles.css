@@ -178,18 +178,19 @@ textarea {
 
 .pet-image {
     max-width: 300px;
-    height: 90%;
-    /* border-radius: 5%; */
-    border: 1px solid var(--dark-gray);
+    height: 100%;
     margin-top: 0.5em;
-    padding: 7px;
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.pet-name {
+    margin-top: 1em;
 }
 
 .pet-data {
     width: 80%;
     text-align: left;
-    margin: 2em; 
+    margin: 1em; 
 }
 
 .pet-button a {
@@ -197,10 +198,6 @@ textarea {
     text-decoration: none;
 }
 
-.read-pet {
-    width: 30%;
-    justify-content: center;
-}
 
 /**********  LIGHTBOX ON PET PAGE **********/
 
@@ -298,7 +295,7 @@ textarea {
 }
 
 .about-text {
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .accordion-div {
