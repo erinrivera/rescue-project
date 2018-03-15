@@ -75,10 +75,6 @@
         grid-area: item-c;
     }
 
-    .item-img img{
-        border-radius: 50%;
-    }
-
     .main-col {
         grid-area: main;
     }
@@ -158,18 +154,61 @@
     
     /******* CONTACT PAGE  *******/
 
-    .contact-title {
-        grid-area: title;
-        
-    }
-    .contact-info {
-        grid-area: info;
+    .contact-content-wrapper {
+        margin: 0 auto;
+        padding-top: 1em;
+        font-size: 1.25em;
+        line-height: 1.5em;
+        width: 80%
     }
 
+    .contact-grid {
+        display: grid;
+        justify-items: left;
+    }
+    
+    .contact-title {
+        grid-area: title;
+        justify-self: center;    
+    }
+    
+    .contact-phone-icon {
+        grid-area: phone-icon;
+        justify-self: center;
+    }
+    
+    .contact-address-icon {
+        grid-area: address-icon;
+        justify-self: center;
+    }
+    
+    .contact-fax-icon {
+        grid-area: fax-icon;
+        justify-self: center;
+    }
+    
+    .contact-address-info,
+    .contact-fax-info,
+    .contact-phone-info {
+        font-size: 20px;
+    }
+    
+    .contact-phone-info {
+        grid-area: phone-info;
+    }
+    
+    .contact-address-info {
+        grid-area: address-info;
+    }
+    
+    .contact-fax-info {
+        grid-area: fax-info;
+    }
+    
     .message-box {
         grid-area: message;
     }
-
+    
     .map-div {
         grid-area: map;
         justify-self: center;
@@ -178,13 +217,14 @@
 
     .contact-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
-            "title title"
-            "info message"
-            "map map";
-        justify-items: left;
+            "title title title title"
+            "address-icon address-info message message"
+            "phone-icon phone-info message message"
+            "fax-icon fax-info message message"
+            "map map map map";
     }
 
     #map-sm {

@@ -17,7 +17,6 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
-    width: 100%;
     background-color: #fff;
     color: var(--dark-gray);
 }
@@ -39,14 +38,27 @@ a {
     margin: 0 auto;
 }
 
+
+/**** INDEX PAGE STYLING  ****/ 
+
 .main-grid {
     display: block;
+    text-align: center;
+    margin: 1em;
+    font-size: 1.4em;
 }
 
 .bus-list ul {
     list-style: none;
 }
 
+.item {
+    padding: 1em 0;
+}
+
+.item-img img{
+    border-radius: 50%;
+}
 
 
 /********* FORM STYLES **********/
@@ -111,7 +123,7 @@ textarea {
     color: #fff;
     text-align: center;
     align-items: center;
-    padding: .5em;
+    padding: 0.5em 1em 0.5em 0.5em;
     text-decoration: none;
     font-size: 1.5em;
     display: block;
@@ -258,15 +270,84 @@ textarea {
 
 /* CONTACT PAGE STYLING */
 
+
 .contact-grid {
     display: grid;
-    justify-items: center;
+    justify-items: left;
 }
 
-/***************** CONTACT PAGE STYLING *******************************/
+.contact-title {
+    grid-area: title;
+    justify-self: center;    
+}
+
+.contact-phone-icon {
+    grid-area: phone-icon;
+    justify-self: center;
+}
+
+.contact-address-icon {
+    grid-area: address-icon;
+    justify-self: center;
+}
+
+.contact-fax-icon {
+    grid-area: fax-icon;
+    justify-self: center;
+}
+
+.contact-address-info,
+.contact-fax-info,
+.contact-phone-info {
+    font-size: 20px;
+}
+
+.contact-phone-info {
+    grid-area: phone-info;
+}
+
+.contact-address-info {
+    grid-area: address-info;
+}
+
+.contact-fax-info {
+    grid-area: fax-info;
+    justify-self: left;
+}
+
+.message-box {
+    grid-area: message;
+}
+
+.map-div {
+    grid-area: map;
+    justify-self: center;
+    margin: 2em 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "title title title"
+        "address-icon address-info address-info"
+        "phone-icon phone-info phone-info"
+        "fax-icon fax-info fax-info"
+        "message message message"
+        "map map map";
+    justify-items: left;
+}
 
 .info {
     font-size: 28px;
+}
+
+.icon {
+}
+
+.message-box {
+    margin-top: 1em;
 }
 
 #map-sm {
@@ -331,9 +412,9 @@ textarea {
 /* FOOTER */
 
 footer {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    padding: 0;
+    padding: 1.2em 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
