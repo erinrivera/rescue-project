@@ -15,6 +15,7 @@
 
 body {
     margin: 0 auto;
+    width: 100%;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
     background-color: #fff;
@@ -127,6 +128,7 @@ textarea {
     text-decoration: none;
     font-size: 1.5em;
     display: block;
+    width: 100%;
 }
 
 .logo {
@@ -270,6 +272,10 @@ textarea {
 
 /* CONTACT PAGE STYLING */
 
+.contact-content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
 
 .contact-grid {
     display: grid;
@@ -283,17 +289,20 @@ textarea {
 
 .contact-phone-icon {
     grid-area: phone-icon;
-    justify-self: center;
+    justify-self: right;
+    padding-right: 2em;
 }
 
 .contact-address-icon {
     grid-area: address-icon;
-    justify-self: center;
+    justify-self: right;
+    padding-right: 2em;
 }
 
 .contact-fax-icon {
     grid-area: fax-icon;
-    justify-self: center;
+    justify-self: right;
+    padding-right: 2em;
 }
 
 .contact-address-info,
@@ -304,10 +313,12 @@ textarea {
 
 .contact-phone-info {
     grid-area: phone-info;
+    justify-self: left;
 }
 
 .contact-address-info {
     grid-area: address-info;
+    justify-self: left;
 }
 
 .contact-fax-info {
@@ -317,11 +328,13 @@ textarea {
 
 .message-box {
     grid-area: message;
+    width: 100%;
 }
 
 .map-div {
     grid-area: map;
     justify-self: center;
+    align-self: center;
     margin: 2em 0;
 }
 
@@ -343,9 +356,6 @@ textarea {
     font-size: 28px;
 }
 
-.icon {
-}
-
 .message-box {
     margin-top: 1em;
 }
@@ -363,7 +373,7 @@ textarea {
 
 #map-lg {
     display: none;
-    border: 5px solid var(--primary-blue);
+    justify-content: center;
 }
 
 /************************** ABOUT PAGE STYLING *************************/

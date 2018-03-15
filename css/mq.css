@@ -49,7 +49,7 @@
         width: 80%
     }
 
-    /*************** INDEX PAGE ************************/
+    /*********** INDEX PAGE *****************/
 
     /* GRID CONTAINER - INDEX PAGE */
 
@@ -162,29 +162,25 @@
         width: 80%
     }
 
-    .contact-grid {
-        display: grid;
-        justify-items: left;
-    }
-    
-    .contact-title {
-        grid-area: title;
-        justify-self: center;    
-    }
-    
     .contact-phone-icon {
         grid-area: phone-icon;
-        justify-self: center;
+        justify-self: left;
+        padding-right: 2em;
+        align-self: center;
     }
     
     .contact-address-icon {
         grid-area: address-icon;
-        justify-self: center;
+        justify-self: left;
+        padding-right: 2em;
+        align-self: center;
     }
     
     .contact-fax-icon {
         grid-area: fax-icon;
-        justify-self: center;
+        justify-self: left;
+        padding-right: 2em;
+        align-self: center;
     }
     
     .contact-address-info,
@@ -195,24 +191,20 @@
     
     .contact-phone-info {
         grid-area: phone-info;
+        justify-self: left;
+        align-self: center;
     }
     
     .contact-address-info {
         grid-area: address-info;
+        justify-self: left;
+        align-self: center;
     }
     
     .contact-fax-info {
         grid-area: fax-info;
-    }
-    
-    .message-box {
-        grid-area: message;
-    }
-    
-    .map-div {
-        grid-area: map;
-        justify-self: center;
-        margin: 2em 0;
+        justify-self: left;
+        align-self: center;
     }
 
     .contact-grid {
@@ -243,10 +235,11 @@
     }
 
     .message-box input{
+        position: relative;
         width: 100%;
     }
 
-    /*********************** ABOUT PAGE STYLING ************************/
+    /********** ABOUT PAGE STYLING **********/
 
     .about-image {
         float: right;
@@ -348,7 +341,46 @@
         height: auto;
     }
 
-    /* CONTACT PAGE STYLING */
+    /********** CONTACT PAGE STYLING *******/
+
+    .contact-phone-icon {
+        grid-area: phone-icon;
+        justify-self: right;
+        padding-right: 2em;
+    }
+    
+    .contact-address-icon {
+        grid-area: address-icon;
+        justify-self: right;
+        padding-right: 2em;
+    }
+    
+    .contact-fax-icon {
+        grid-area: fax-icon;
+        justify-self: right;
+        padding-right: 2em;
+    }
+    
+    .contact-address-info,
+    .contact-fax-info,
+    .contact-phone-info {
+        font-size: 20px;
+    }
+    
+    .contact-phone-info {
+        grid-area: phone-info;
+        justify-self: left;
+    }
+    
+    .contact-address-info {
+        grid-area: address-info;
+        justify-self: left;
+    }
+    
+    .contact-fax-info {
+        grid-area: fax-info;
+        justify-self: left;
+    }
 
     #map-sm {
         display: none;
