@@ -207,15 +207,24 @@
         align-self: center;
     }
 
+    .message-box {
+        align-self: center;
+    }
+
     .contact-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 3em 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
             "title title title title"
-            "address-icon address-info message message"
-            "phone-icon phone-info message message"
-            "fax-icon fax-info message message"
+            "address-icon . message message"
+            "address-info . message message"
+            "phone-icon . message message"
+            "phone-info . message message"
+            "fax-icon . message message"
+            "fax-info . message message"
+            /* "phone-icon phone-info message message"
+            "fax-icon fax-info message message" */
             "map map map map";
     }
 
@@ -237,6 +246,11 @@
     .message-box input{
         position: relative;
         width: 100%;
+    }
+
+    .map-div {
+        justify-content: center;
+        border: none;
     }
 
     /********** ABOUT PAGE STYLING **********/
@@ -282,6 +296,7 @@
         margin-top: 0;
         width: auto;
         line-height: 1em;
+        font-size: 1em;
     }
 
     .page-title {
@@ -317,6 +332,22 @@
         z-index: -4;
     }
 
+    /**** INDEX PAGE STYLING  ****/ 
+
+    .main-grid {
+        margin: 1em;
+        font-size: 1em;
+    }
+
+    .item {
+        padding: 1em 0;
+    }
+
+    .item-img img{
+        border-radius: 50%;
+    }
+
+
     /* Adoptable Pet Page */
 
     #firstRow {
@@ -351,7 +382,7 @@
     
     .contact-address-icon {
         grid-area: address-icon;
-        justify-self: right;
+        justify-self: center;
         padding-right: 2em;
     }
     
@@ -380,6 +411,19 @@
     .contact-fax-info {
         grid-area: fax-info;
         justify-self: left;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 5em 15em 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "title title title title"
+            "address-icon address-info message message"
+            "phone-icon phone-info message message"
+            "fax-icon fax-info message message"
+            "map map map map";
+
     }
 
     #map-sm {
