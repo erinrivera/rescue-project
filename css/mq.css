@@ -10,12 +10,22 @@
 
     body {
         margin-top: 0;
-        width: auto;
+        width: 100%;
         line-height: 1em;
+    }
+
+    .content-wrapper {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 5em;
+        font-size: 1.25em;
+        line-height: 1.5em;
     }
 
     .page-title {
         font-size: 2em;
+        margin-top: -7em;
+        opacity: 0.99;
     }
 
     .subtitle {
@@ -41,26 +51,16 @@
         z-index: -4;
     }
 
-    .content-wrapper {
-        margin: 0 auto;
-        padding-top: 5em;
-        font-size: 1.25em;
-        line-height: 1.5em;
-        width: 80%
-    }
-
     /*********** INDEX PAGE *****************/
 
     /* GRID CONTAINER - INDEX PAGE */
 
     .item {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
+        padding: 1em 0;
     }
 
     .item-img {
-        margin: auto;
+        justify-self: center;
     }
 
     .item-a {
@@ -77,6 +77,11 @@
 
     .main-col {
         grid-area: main;
+        justify-self: start;
+    }
+
+    .main-col-heading {
+        line-height: 2em;
     }
 
     .sidebar {
@@ -90,17 +95,18 @@
 
     
     .main-grid {
-        margin-top: 0.5em;
+        margin-top: 1em;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 2fr auto 1fr;
         grid-column-gap: 2em;
         grid-row-gap: 3em;
-        justify-items: center;
+        justify-content: space-evenly;
         grid-template-areas: 
         "item-a item-b item-c"
         "main main sidebar"
         "footer-bar footer-bar footer-bar";
+        font-size: 1em;
     }
     
     /* NAVIGATION */
@@ -230,17 +236,14 @@
 
     #map-sm {
         display: none;
-        border: 3px solid var(--primary-blue);
     }
 
     #map-md {
         display: block;
-        border: 5px solid var(--primary-blue);
     }
 
     #map-lg {
         display: none;
-        border: 5px solid var(--primary-blue);
     }
 
     .message-box input{
@@ -250,7 +253,6 @@
 
     .map-div {
         justify-content: center;
-        border: none;
     }
 
     /********** ABOUT PAGE STYLING **********/
@@ -290,7 +292,7 @@
 
 @media (min-width: 900px) {
     
-    /* BASIC STYLES */
+    /***** BASIC STYLES *****/
 
     body {
         margin-top: 0;
@@ -298,6 +300,8 @@
         line-height: 1em;
         font-size: 1em;
     }
+
+    /***** HEADER STYLES *****/
 
     .page-title {
         font-size: 4.5em;
@@ -428,17 +432,18 @@
 
     #map-sm {
         display: none;
-        border: 3px solid var(--primary-blue);
     }
 
     #map-md {
         display: none;
-        border: 5px solid var(--primary-blue);
     }
 
     #map-lg {
         display: block;
-        border: 5px solid var(--primary-blue);
+    }
+
+    .map-div {
+        justify-content: center;
     }
 
     /* FOOTER */

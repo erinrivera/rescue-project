@@ -93,12 +93,6 @@ textarea {
     width: 100%;
 }
 
-.address-icon img,
-.phone-icon img {
-    height: 50px;
-    width: auto;
-}
-
 
 /********* NAVBAR STYLING ***********/
 .main-nav {
@@ -336,7 +330,7 @@ textarea {
     grid-area: map;
     justify-self: center;
     align-self: center;
-    margin: 2em 0;
+    padding: 1em;
 }
 
 .contact-grid {
@@ -363,18 +357,20 @@ textarea {
 
 #map-sm {
     display: block;
-    border: 3px solid var(--primary-blue);
     margin: 1em 0;
+    justify-content: center;
 }
 
 #map-md {
     display: none;
-    border: 5px solid var(--primary-blue);
+    justify-content: center;
+    margin: 1em 0;
 }
 
 #map-lg {
     display: none;
     justify-content: center;
+    margin: 1em 0;
 }
 
 /************************** ABOUT PAGE STYLING *************************/
