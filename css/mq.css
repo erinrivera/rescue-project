@@ -30,20 +30,6 @@
         padding: 3em 0;
     }
 
-    .donate-content-wrapper {
-        width: 80%;
-        margin: 0 auto;
-        padding: 5em 0;
-        font-size: 1.2em;
-        line-height: 1.4em;
-    }
-
-    #donate-icon {
-        float: right;
-        padding-left: 3em;
-        padding-bottom: 3em;
-    }
-
     .page-title {
         font-size: 2em;
         margin-top: -7em;
@@ -71,6 +57,22 @@
         background-position: center center;
         opacity: 0.5;
         z-index: -4;
+    }
+
+    /*************** DONATE PAGE  **********************/
+
+    .donate-content-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        padding: 5em 0;
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+
+    #donate-icon {
+        float: right;
+        padding-left: 3em;
+        padding-bottom: 3em;
     }
 
     /*********** INDEX PAGE *****************/
@@ -160,9 +162,14 @@
 
     /************* PET DISPLAY PAGE (ADOPTABLE ANIMALS) ******************/
 
+    .pet-display-page-wrapper {
+        padding: 3em 0;
+    }
+
     #firstRow {
         justify-content: space-between;
         align-items: space-between;
+        padding-top: 2em;
     }
 
     /* Pet Card Div */

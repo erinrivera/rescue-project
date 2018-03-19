@@ -239,7 +239,7 @@ textarea {
 	width: 90%;
 	height: 90%;
 	padding: 16px;
-	border: 16px solid var(--dark-gray);
+	border: 5px solid var(--dark-gray);
 	background-color: white;
 	z-index: 1002;
 	overflow-x: scroll;
