@@ -20,6 +20,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     background-color: #fff;
     color: var(--dark-gray);
+    box-sizing: content-box;
 }
 
 a {

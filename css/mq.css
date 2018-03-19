@@ -14,6 +14,12 @@
         line-height: 1em;
     }
 
+    *,
+    *::before,
+    *::after {
+        box-sizing: content-box; 
+    }
+
     .content-wrapper {
         width: 90%;
         margin: 0 auto;
@@ -161,8 +167,9 @@
         padding: 0.5em;
         background-color: #ffffff;
         margin: 0.5em;
-        border-radius: 5%;
+        
         line-height: 1.5;
+        border: 1px solid lightgray;
     }
     
     /******* CONTACT PAGE  *******/
