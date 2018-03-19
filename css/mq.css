@@ -14,12 +14,6 @@
         line-height: 1em;
     }
 
-    *,
-    *::before,
-    *::after {
-        box-sizing: content-box; 
-    }
-
     .content-wrapper {
         width: 90%;
         margin: 0 auto;
@@ -33,6 +27,21 @@
         margin: 0 auto;
         font-size: 1.2em;
         line-height: 1.4em;
+        padding: 3em 0;
+    }
+
+    .donate-content-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        padding: 5em 0;
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+
+    #donate-icon {
+        float: right;
+        padding-left: 3em;
+        padding-bottom: 3em;
     }
 
     .page-title {
@@ -123,7 +132,8 @@
     }
     
     /* NAVIGATION */
-        .nav-list {
+    
+    .nav-list {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-evenly;
@@ -143,16 +153,13 @@
         line-height: 1em;
         margin-bottom: 0.5em;
     }
-
-    li a:hover:not(.active) {
-        border-bottom: 5px solid navy;
-    }
-    
+ 
     .active {
         border-bottom: 5px solid navy;
     }
 
     /************* PET DISPLAY PAGE (ADOPTABLE ANIMALS) ******************/
+
     #firstRow {
         justify-content: space-between;
         align-items: space-between;
@@ -178,7 +185,7 @@
 
     .contact-content-wrapper {
         margin: 0 auto;
-        padding-top: 1em;
+        padding-top: 3em;
         font-size: 1.25em;
         line-height: 1.5em;
         width: 80%
@@ -245,8 +252,6 @@
             "phone-info . message message"
             "fax-icon . message message"
             "fax-info . message message"
-            /* "phone-icon phone-info message message"
-            "fax-icon fax-info message message" */
             "map map map map";
     }
 
@@ -300,6 +305,7 @@
         width: 25px;
         text-align: center;
         text-decoration: none;
+        box-sizing: content-box;
     }
 }
 
@@ -335,9 +341,7 @@
 
     .main-header {
         display: block;
-        /* margin: 0 auto; */
         width: 100%;
-        height: auto;
     }
 
     .header-bkgd {

@@ -20,7 +20,6 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     background-color: #fff;
     color: var(--dark-gray);
-    box-sizing: content-box;
 }
 
 a {
@@ -417,7 +416,7 @@ textarea {
 
 /* Hidden panel below question heading */
 .panel {
-    padding: 0 18px;
+    padding: 1.5em;
     background-color: white;
     display: none;
     overflow: hidden;
@@ -446,6 +445,7 @@ footer {
     width: 25px;
     text-align: center;
     text-decoration: none;
+    box-sizing: content-box;
 }
 
 /* Soc Icon hover effect */
