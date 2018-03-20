@@ -259,14 +259,14 @@ textarea {
 }
 
 .lb-img {
-    height: 400px;
+    height: 300px;
     display: inline-block;
     padding: 0.5em;
     margin-top: 0.5em;
 }
 
 .lb-img img {
-    max-height: 400px;
+    max-height: 300px;
 }
 
 .lb-pet-header {
