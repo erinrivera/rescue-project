@@ -160,8 +160,10 @@
                                 <div class="lb-img-div">
                                     ${photoList}                        
                                 </div>
-                                <h2>${name} - <span id="idNo">ID: ${id}</span></h2>
-                                <h4><strong> ${breed} -- ${gender} -- ${age} </strong></h4>
+                                <div class="lb-pet-header">
+                                    <h2>${name} - <span id="idNo">ID: ${id}</span></h2>
+                                    <h4><strong> ${breed} -- ${gender} -- ${age} </strong></h4>
+                                </div>
                                 <p class="lb-desc"><strong> Description: </strong> ${desc}</p>
                                 <a href = "javascript:void(0)" onclick = "document.getElementById('light${id}').style.display='none';document.getElementById('fade${id}').style.display='none'">Close</a>
                             </div>
