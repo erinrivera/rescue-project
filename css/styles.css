@@ -5,11 +5,10 @@
 :root {
     --primary-blue: #1b79a8;
     --dark-gray: #45454b;
-    --accent-navy: navy; 
+    --accent-navy: navy;
     --white: #fff;
-
-
 }
+
 
 /********* BASIC STYLES ***********/
 
@@ -47,7 +46,7 @@ a {
 }
 
 
-/**** INDEX PAGE STYLING  ****/ 
+/**** INDEX PAGE STYLING  ****/
 
 .main-grid {
     display: block;
@@ -64,7 +63,7 @@ a {
     padding: 1em 0;
 }
 
-.item-img img{
+.item-img img {
     border-radius: 50%;
 }
 
@@ -73,8 +72,9 @@ a {
 
 .section-title {
     padding-top: 1rem;
-};
+}
 
+;
 .first-row {
     padding-top: 2rem;
 }
@@ -83,7 +83,9 @@ a {
     padding-top: 0.8rem;
 }
 
+
 /********* COMPONENTS ***********/
+
 button {
     background-color: var(--primary-blue);
     border: none;
@@ -102,6 +104,7 @@ textarea {
 
 
 /********* NAVBAR STYLING ***********/
+
 .main-nav {
     width: 100%;
     height: auto;
@@ -143,7 +146,7 @@ textarea {
     width: 80%;
     margin: 0 auto;
     padding-top: 1em;
-    display: block; 
+    display: block;
     line-height: 1.5em;
 }
 
@@ -151,11 +154,12 @@ textarea {
     text-align: center;
 }
 
-.pet-display-page-wrapper > p {
+.pet-display-page-wrapper>p {
     font-size: 1.2em;
 }
 
-#firstRow {  /* Starting container for pet display page */ 
+#firstRow {
+    /* Starting container for pet display page */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -167,7 +171,8 @@ textarea {
     align-content: center;
 }
 
-#firstRow > div {  /* pet card Div */
+#firstRow>div {
+    /* pet card Div */
     display: flex;
     height: auto;
     flex-flow: column nowrap;
@@ -194,7 +199,7 @@ textarea {
 .pet-image {
     max-width: 300px;
     height: 100%;
-    margin-top: 0.5em;
+    margin: 0.5em 0;
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -205,7 +210,7 @@ textarea {
 .pet-data {
     width: 80%;
     text-align: left;
-    margin: 1em; 
+    margin: 1em;
 }
 
 .pet-button a {
@@ -216,33 +221,33 @@ textarea {
 
 /**********  LIGHTBOX ON PET PAGE **********/
 
-.black_overlay{
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background-color: black;
-	z-index:1001;
-	-moz-opacity: 0.8;
-	opacity:.80;
+.black_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
     filter: alpha(opacity=80);
     overflow: hidden;
 }
 
 .white_content {
-	display: none;
-	position: fixed;
-	top: 5%;
-	left: 5%;
-	width: 90%;
-	height: 90%;
-	padding: 16px;
-	border: 5px solid var(--dark-gray);
-	background-color: white;
-	z-index: 1002;
-	overflow-x: scroll;
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    padding: 16px;
+    border: 5px solid var(--dark-gray);
+    background-color: white;
+    z-index: 1002;
+    overflow-x: scroll;
 }
 
 .lb-img-div {
@@ -269,7 +274,9 @@ textarea {
     padding-top: 1em;
 }
 
+
 /* ADOPTION APPLICATION STYLING */
+
 
 /* CONTACT PAGE STYLING */
 
@@ -285,7 +292,7 @@ textarea {
 
 .contact-title {
     grid-area: title;
-    justify-self: center;    
+    justify-self: center;
 }
 
 .contact-phone-icon {
@@ -343,13 +350,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
-        "title title title"
-        "address-icon address-info address-info"
-        "phone-icon phone-info phone-info"
-        "fax-icon fax-info fax-info"
-        "message message message"
-        "map map map";
+    grid-template-areas: "title title title" "address-icon address-info address-info" "phone-icon phone-info phone-info" "fax-icon fax-info fax-info" "message message message" "map map map";
     justify-items: left;
 }
 
@@ -379,9 +380,12 @@ textarea {
     margin: 1em 0;
 }
 
+
 /************************** ABOUT PAGE STYLING *************************/
 
+
 /* Question panels on accordion */
+
 .about-heading {
     font-size: 1.2em;
     color: var(--dark-gray);
@@ -409,18 +413,24 @@ textarea {
     font-size: 1em;
 }
 
+
 /* Bkgd color for question panel w/hover or active */
-.acc-active, .accordion:hover {
+
+.acc-active,
+.accordion:hover {
     background-color: #ccc;
 }
 
+
 /* Hidden panel below question heading */
+
 .panel {
     padding: 1.5em;
     background-color: white;
     display: none;
     overflow: hidden;
 }
+
 
 /* FOOTER */
 
@@ -437,7 +447,9 @@ footer {
     flex-basis: 0 1 auto;
 }
 
+
 /* ALL soc icon styling */
+
 .fa {
     margin: 1em 0.5em;
     padding: 10px;
@@ -448,7 +460,9 @@ footer {
     box-sizing: content-box;
 }
 
+
 /* Soc Icon hover effect */
+
 .fa:hover {
     opacity: 0.7;
 }
@@ -462,18 +476,18 @@ footer {
     background: #55ACEE;
     color: white;
 }
-  
-  .fa-youtube {
+
+.fa-youtube {
     background: #bb0000;
     color: white;
 }
-  
-  .fa-instagram {
+
+.fa-instagram {
     background: #125688;
     color: white;
 }
-  
-  .fa-pinterest {
+
+.fa-pinterest {
     background: #cb2027;
-    color: white;}
-  
+    color: white;
+}
