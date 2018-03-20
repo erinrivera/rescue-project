@@ -14,7 +14,7 @@
 
 body {
     margin: 0 auto;
-    width: 100%;
+    width: 100vw;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
     background-color: #fff;
@@ -133,10 +133,6 @@ textarea {
     font-size: 1.5em;
     display: block;
     width: 100%;
-}
-
-.logo {
-    display: none;
 }
 
 
