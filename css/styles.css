@@ -252,21 +252,21 @@ textarea {
 
 .lb-img-div {
     margin: 0.5em 1em;
-    max-height: 300px;
+    height: auto;
     justify-content: center;
     display: inline-block;
     padding-bottom: 2em;
 }
 
 .lb-img {
-    height: 300px;
+    height: 400px;
     display: inline-block;
     padding: 0.5em;
     margin-top: 0.5em;
 }
 
 .lb-img img {
-    height: 300px;
+    max-height: 400px;
 }
 
 .lb-pet-header {
