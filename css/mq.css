@@ -17,7 +17,7 @@
     .content-wrapper {
         width: 90%;
         margin: 0 auto;
-        padding-top: 5em;
+        padding-top: 7em;
         font-size: 1.25em;
         line-height: 1.5em;
     }
@@ -32,12 +32,15 @@
 
     .page-title {
         font-size: 2em;
-        margin-top: -7em;
+        margin-top: -9em;
         opacity: 0.99;
     }
 
     .subtitle {
         font-size: 1.5em;
+        margin-top: 4em;
+        margin-left: -2em;
+        opacity: .7;
     }
 
     .main-header {
@@ -112,25 +115,26 @@
         grid-area: sidebar;
     }
 
-    .footer-bar {
-        grid-area: footer-bar;
-        justify-self: center;
-    }
+    
 
     
     .main-grid {
         margin-top: 1em;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 2fr auto 1fr;
+        grid-template-rows: 2fr auto;
         grid-column-gap: 2em;
         grid-row-gap: 3em;
         justify-content: space-evenly;
         grid-template-areas: 
         "item-a item-b item-c"
-        "main main sidebar"
-        "footer-bar footer-bar footer-bar";
+        "main main sidebar";
         font-size: 1em;
+    }
+
+    .footer-bar {
+        margin: 1em 0;
+        justify-self: center;
     }
     
     /* NAVIGATION */
@@ -308,8 +312,8 @@
     .fa {
         margin: 1em 0.5em;
         padding: 10px;
-        font-size: 15px;
-        width: 25px;
+        font-size: 30px;
+        width: 50px;
         text-align: center;
         text-decoration: none;
         box-sizing: content-box;
@@ -330,7 +334,9 @@
         font-size: 1em;
     }
 
-    /***** HEADER STYLES *****/
+    /***** INDEX PAGE STYLES*****/
+
+    /****  Header Styles ****/
 
     .page-title {
         font-size: 4.5em;
@@ -342,7 +348,7 @@
     .subtitle {
         font-size: 2.5em;
         color: #333;
-        margin: -4em 0 7em 4em;
+        margin: -4em 0 1em 4em;
         opacity: 0.8;
     }
 
@@ -363,7 +369,7 @@
         z-index: -4;
     }
 
-    /**** INDEX PAGE STYLING  ****/ 
+    /**** Main Content Section Styling  ****/ 
 
     .main-grid {
         margin: 1em;
