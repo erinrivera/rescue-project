@@ -38,12 +38,13 @@ I created a lot of CSS classes, with a total of about 1100 lines of CSS for the 
 
 ## Custom JavaScript Functions
 
-1. \*function shortDesc(str) {
+1. ```function shortDesc(str) {
         return str.split(/\s+/).slice(0,10).join(" ");
-    }\*
+    }
+    ```
     * This function takes a long string (description of pet), splits the words apart at a space, slices the first 10 words, then joins them back together into a string. The purpose of shortDesc is to add a brief description of the pet to its card, while the full description is available in the lightbox.
 
-2. \*function petDisplay() {
+2. ```function petDisplay() {
         // Variables defined
         var apiKey = "925dcf328934c0d0fa7102b11a2b93b0";
         var url = 'https://api.petfinder.com/shelter.getPets';
@@ -59,17 +60,17 @@ I created a lot of CSS classes, with a total of about 1100 lines of CSS for the 
             },
             success: function( response ) {
                 var data = [];
-                data = response.petfinder.pets.pet; 
+                data = response.petfinder.pets.pet;
                 console.log(data)
             }
         })
-    }\*
+    }
+    ```
     * This function makes an AJAX call to the PetFinder API and returns an array of pets available for adoption from Animal Care Society.
 
-3. \*for (let i = 1; i <= picCount; i++) {
+3. ```for (let i = 1; i <= picCount; i++) {
         let pic = photoUrl + pfid + "/" + [i] + "/";
         photoList += "<div class='lb-img'><img src='" + pic + "'> </div> ";
-    }\*
+    }
+    ```
     * This is part of the much larger createPetDivs function, and is a for loop that iterates through an array of pet photos and creates a URL for each picture.
-
-    
