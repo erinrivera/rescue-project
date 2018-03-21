@@ -30,21 +30,6 @@ function longDesc(str) {
     return str.split(/\s+/).slice(0,100).join(" ");
 }
 
-function createScript(id) {
-    var petScript = `
-        <script>
-        // SCRIPT FOR MODAL 
-        // Get the modal
-        var modal = document.getElementById('${id}modal');
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("${id}btn");
-
-        
-        </script>
-    `
-}
-
 // ABOUT PAGE
 
 //Accordion
