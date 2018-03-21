@@ -434,6 +434,14 @@ textarea {
     margin: 1em 0;
 }
 
+.about-text ul,
+.about-text ul li {
+    margin-top: 1em;
+    list-style: none;
+}
+
+
+
 /*************** HELP ACS PAGE STYLING ************************/
 
 .accordion-div {

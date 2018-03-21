@@ -62,22 +62,6 @@
         z-index: -4;
     }
 
-    /*************** DONATE PAGE  **********************/
-
-    .donate-content-wrapper {
-        width: 80%;
-        margin: 0 auto;
-        padding: 5em 0;
-        font-size: 1.2em;
-        line-height: 1.4em;
-    }
-
-    #donate-icon {
-        float: right;
-        padding-left: 3em;
-        padding-bottom: 3em;
-    }
-
     /*********** INDEX PAGE *****************/
 
     /* GRID CONTAINER - INDEX PAGE */
@@ -115,9 +99,6 @@
         grid-area: sidebar;
     }
 
-    
-
-    
     .main-grid {
         margin-top: 1em;
         display: grid;
@@ -137,7 +118,7 @@
         justify-self: center;
     }
     
-    /* NAVIGATION */
+    /************** NAVIGATION **********************/
     
     .nav-list {
         display: flex;
@@ -190,6 +171,22 @@
         border-left: 1px solid lightgray;
         border-bottom: 4px solid lightgray;
         border-right: 4px solid lightgray;
+    }
+    
+    /*************** DONATE PAGE  **********************/
+
+    .donate-content-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        padding: 5em 0;
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+
+    #donate-icon {
+        float: right;
+        padding-left: 3em;
+        padding-bottom: 3em;
     }
     
     /******* CONTACT PAGE  *******/
@@ -289,6 +286,14 @@
 
     /********** ABOUT PAGE STYLING **********/
 
+    .about-content-wrapper {
+        margin: 0 auto;
+        padding-top: 2em;
+        font-size: 1.25em;
+        line-height: 1.5em;
+        width: 80%
+    }
+
     .about-image {
         float: right;
     }
@@ -308,7 +313,7 @@
         flex-basis: 1 1 auto;
     }
     
-    /* ALL soc icon styling */
+    /***************** ALL soc icon styling *****************/
     .fa {
         margin: 1em 0.5em;
         padding: 10px;
@@ -342,13 +347,13 @@
         font-size: 4.5em;
         color: black;
         opacity: 0.99;
-        margin: -9em 0 6em 2em;
+        margin: -11em 0 6em 2em;
     }
 
     .subtitle {
         font-size: 2.5em;
         color: #333;
-        margin: -4em 0 1em 4em;
+        margin: -9em 0 8em 4em;
         opacity: 0.8;
     }
 
