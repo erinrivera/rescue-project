@@ -409,15 +409,32 @@ textarea {
 
 /* Question panels on accordion */
 
+.about-content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
 .about-heading {
-    font-size: 1.2em;
+    font-style: italic;
     color: var(--dark-gray);
     margin: 1em 0;
 }
 
-.about-text {
-    font-size: 1em;
+.about-image img {
+    width: 100%;
 }
+
+.about-text {
+    font-size: 1.2em;
+}
+
+.about-text h1,
+.about-text h2 {
+    text-align: center;
+    margin: 1em 0;
+}
+
+/*************** HELP ACS PAGE STYLING ************************/
 
 .accordion-div {
     margin-top: 3em;
@@ -435,7 +452,6 @@ textarea {
     transition: 0.4s;
     font-size: 1em;
 }
-
 
 /* Bkgd color for question panel w/hover or active */
 
