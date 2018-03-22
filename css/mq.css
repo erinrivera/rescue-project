@@ -164,7 +164,7 @@
         flex: 1 1 30%;
         text-align: center;
         padding: 0.5em;
-        background-color: #ffffff;
+        background-color: var(--light-blue);
         margin: 0.5em;
         line-height: 1.5;
         border-top: 1px solid lightgray;
@@ -476,7 +476,7 @@
         flex: 0 0 25%;
         text-align: center;
         padding: 0.5em;
-        background-color: #ffffff;
+        background-color: var(--light-blue);
         margin: 0.5em;
         border-radius: 5%;
         line-height: 1.5;

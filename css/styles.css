@@ -4,6 +4,7 @@
 
 :root {
     --primary-blue: #1b79a8;
+    --light-blue: #F2F3F5;
     --dark-gray: #45454b;
     --accent-navy: navy;
     --white: #fff;
@@ -162,7 +163,7 @@ textarea {
 
 .nav-list {
     list-style-type: none;
-    background-color: #1b79a8;
+    background-color: var(--primary-blue);
     display: block;
     margin: 0 auto;
 }
@@ -267,7 +268,7 @@ textarea {
     flex: 1 1 50%;
     text-align: center;
     padding: 0.5em;
-    background-color: #F2F3F5;
+    background-color: var(--light-blue);
     margin: 0.5em;
     padding-top: 1em;
     border-radius: 5%;
