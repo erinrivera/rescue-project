@@ -369,6 +369,7 @@ textarea {
 .contact-content-wrapper {
     width: 90%;
     margin: 0 auto;
+    padding-top: 1em;
 }
 
 .contact-grid {
@@ -427,9 +428,8 @@ textarea {
 
 .map-div {
     grid-area: map;
-    justify-self: center;
+    text-align: center;
     align-self: center;
-    padding: 1em;
 }
 
 .contact-grid {
