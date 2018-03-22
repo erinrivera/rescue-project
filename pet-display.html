@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mq.css">
+    
     <!-- Script Links -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
@@ -151,7 +152,7 @@
                            
                         </div>
                         <div class="pet-button">
-                            <button class="btn btn-primary"><a href = "javascript:void(0)" onclick = "document.getElementById('light${id}').style.display='block';document.getElementById('fade${id}').style.display='block';document.body.style.overflow='hidden'">Read More</a></button>
+                            <button class="btn btn-primary"><a href="javascript:void(0)" onclick = "document.getElementById('light${id}').style.display='block';document.getElementById('fade${id}').style.display='block';document.body.style.overflow='hidden'">Read More</a></button>
                         </div>
 
 		                <div id="light${id}" class="white_content">
@@ -167,6 +168,8 @@
                                 <p class="lb-desc"><strong> Description: </strong> ${desc}</p>
                                 <a href = "javascript:void(0)" onclick = "document.getElementById('light${id}').style.display='none';document.getElementById('fade${id}').style.display='none'">Close</a>
                             </div>
+                        </div>
+                        <div id="fade${id}" class="black_overlay"></div>
                         `
 
                         start.appendChild(petDiv);

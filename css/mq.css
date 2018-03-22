@@ -172,7 +172,68 @@
         border-bottom: 4px solid lightgray;
         border-right: 4px solid lightgray;
     }
+
+    /***** Lightbox Styling *****/
+
+    .black_overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        z-index: 1001;
+        -moz-opacity: 0.8;
+        opacity: .80;
+        filter: alpha(opacity=80);
+        overflow: hidden;
+    }
+
+    .white_content {
+        display: none;
+        position: fixed;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+        padding: 10px;
+        border: 3px solid var(--dark-gray);
+        background-color: white;
+        z-index: 1002;
+        overflow-x: scroll;
+    }
+
+    .pet-lightbox {
+        height: 100%;
+        width: 100%;
+    }
+
+    .lb-img-div {
+        position: relative;
+        margin: 0.5em;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
     
+    .lb-img {
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
+        margin: 2px 0;
+    }
+
+    .lb-img > img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .lb-desc {
+        font-size: 1.15em;
+        padding-top: 1em;
+    }
+        
     /*************** DONATE PAGE  **********************/
 
     .donate-content-wrapper {
