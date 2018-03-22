@@ -182,8 +182,52 @@ textarea {
     width: 100%;
 }
 
+/************************** ABOUT PAGE STYLING *************************/
 
-/********* PET DISPLAY PAGE STYLING ***********/
+/* Question panels on accordion */
+
+.about-content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about-heading {
+    font-style: italic;
+    color: var(--dark-gray);
+    margin: 1em 0;
+}
+
+.about-image img {
+    width: 100%;
+}
+
+.about-text {
+    font-size: 1.2em;
+}
+
+.about-text h1,
+.about-text h2 {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.about-text ul,
+.about-text ul li {
+    margin-top: 1em;
+    list-style: none;
+}
+
+/*********************** DONATE PAGE STYLING ***********************/
+
+.donate-content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5em 0;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+/*********************** PET DISPLAY PAGE STYLING ***********************/
 
 .pet-display-page-wrapper {
     width: 80%;
@@ -320,7 +364,7 @@ textarea {
 /* ADOPTION APPLICATION STYLING */
 
 
-/* CONTACT PAGE STYLING */
+/************************** CONTACT PAGE STYLING *****************************/
 
 .contact-content-wrapper {
     width: 90%;
@@ -422,49 +466,16 @@ textarea {
     margin: 1em 0;
 }
 
-
-/************************** ABOUT PAGE STYLING *************************/
-
-
-/* Question panels on accordion */
-
-.about-content-wrapper {
-    width: 90%;
-    margin: 0 auto;
-}
-
-.about-heading {
-    font-style: italic;
-    color: var(--dark-gray);
-    margin: 1em 0;
-}
-
-.about-image img {
-    width: 100%;
-}
-
-.about-text {
-    font-size: 1.2em;
-}
-
-.about-text h1,
-.about-text h2 {
-    text-align: center;
-    margin: 1em 0;
-}
-
-.about-text ul,
-.about-text ul li {
-    margin-top: 1em;
-    list-style: none;
-}
-
-
-
 /*************** HELP ACS PAGE STYLING ************************/
 
+.help-content-wrapper {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 1em;
+}
+
 .accordion-div {
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 .accordion {
