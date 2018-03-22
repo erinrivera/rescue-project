@@ -38,7 +38,7 @@ function createPetDivs(pets) {
         //Assigns response info to variables
         let name = pets[i].name.$t;
         let pfid = pets[i].id.$t;
-        let pic2 = photoUrl + pfid + "/1/";
+        let mainPic = photoUrl + pfid + "/1/";
         let id = pets[i].shelterPetId.$t;
         let breed = pets[i].breeds.breed.$t;
         let spec = pets[i].animal.$t;
@@ -77,14 +77,14 @@ function createPetDivs(pets) {
 
         for (let i = 1; i <= picCount; i++) {
             let pic = photoUrl + pfid + "/" + [i] + "/";
-            photoList = `<div class="lb-img"><img src="${pic}" alt=>"${name}, a ${age} ${gender} ${breed} ${spec}" </div> 
+            photoList += `<div class="lb-img"> <img src="${pic}" alt="${name}, a ${age} ${gender} ${breed} ${spec}"> </div> 
             `;
         }
 
         // PET DIV CODE
         petDiv.innerHTML = `
         <div class="pet-image-div">
-            <img class="pet-image" src="${pic2}" alt="${name}, a ${age} ${gender} ${breed} ${spec}">
+            <img class="pet-image" src="${mainPic}" alt="${name}, a ${age} ${gender} ${breed} ${spec}">
         </div>
         <div class="pet-name">
             <h3>${name} - <span id="idNo">ID: ${id}</span></h3>
