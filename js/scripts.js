@@ -77,15 +77,14 @@ function createPetDivs(pets) {
 
         for (let i = 1; i <= picCount; i++) {
             let pic = photoUrl + pfid + "/" + [i] + "/";
-            photoList += "<div class='lb-img'><img src='" + pic + "'> </div> ";
+            photoList = `<div class="lb-img"><img src="${pic}" alt=>"${name}, a ${age} ${gender} ${breed} ${spec}" </div> 
+            `;
         }
 
-
         // PET DIV CODE
-
         petDiv.innerHTML = `
         <div class="pet-image-div">
-            <img class="pet-image" src="${pic2}">
+            <img class="pet-image" src="${pic2}" alt="${name}, a ${age} ${gender} ${breed} ${spec}">
         </div>
         <div class="pet-name">
             <h3>${name} - <span id="idNo">ID: ${id}</span></h3>
