@@ -530,10 +530,10 @@ footer {
 
 .fa {
     margin: 1em 0.25em;
-    padding: 7px;
-    font-size: 15px;
+    padding: 10px;
+    font-size: 20px;
     height: auto;
-    width: 25px;
+    width: 40px;
     text-align: center;
     text-decoration: none;
     box-sizing: content-box;
