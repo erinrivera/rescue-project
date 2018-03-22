@@ -243,6 +243,19 @@
         padding-left: 3em;
         padding-bottom: 3em;
     }
+
+    /*********************** HELP ACS PAGE ***************************/
+
+    .retail-pic {
+        text-align: center;
+    }
+
+    .retail-pic img {
+        padding: 1em;
+        width: 40%;
+        height: auto;
+        display: inline-block;
+    }
     
     /******* CONTACT PAGE  *******/
 
@@ -556,6 +569,9 @@
     .map-div {
         justify-content: center;
     }
+
+    /************* HELP ACS PAGE STYLING *************/
+
 
     /* FOOTER */
     footer {

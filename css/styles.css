@@ -493,20 +493,28 @@ textarea {
 }
 
 /* Bkgd color for question panel w/hover or active */
-
 .acc-active,
 .accordion:hover {
     background-color: #ccc;
 }
 
-
 /* Hidden panel below question heading */
-
 .panel {
     padding: 1.5em;
     background-color: white;
     display: none;
     overflow: hidden;
+}
+
+.retail-pic {
+    text-align: center;
+}
+
+.retail-pic img {
+    padding: 1em;
+    width: 40%;
+    height: auto;
+    display: inline-block;
 }
 
 
