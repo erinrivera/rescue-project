@@ -183,6 +183,17 @@ textarea {
     width: 100%;
 }
 
+.navbar {
+    height: auto;
+}
+
+nav  a {
+    font-size: 1.25em;
+}
+
+.navbar-brand {
+    font-size: 1.7em;
+}
 
 /************************** ABOUT PAGE STYLING *************************/
 
