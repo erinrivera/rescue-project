@@ -569,11 +569,38 @@
     }
 }
 
+/******************** MEDIA QUERY - NAVBAR BREAKPOINT (collapse to horiz) - MIN 1000PX ******************************/
+
+@media (min-width: 1000px ) {
+
+    .navbar-brand {
+        font-size: 1.5em;
+        margin-right: 1em;
+    }
+
+    nav a {
+        font-size: 1.25em;
+        margin-right: 0.5em;
+    }
+
+}
+
 /******************** MEDIA QUERY - X-LARGE SCREEN SIZES - MIN 1200PX ******************************/
 @media (min-width: 1200px) {
 
     /* Pet card div */
     #firstRow > div {
         flex: 0 0 20%;
+    }
+
+    /* NavBar */
+    .navbar-brand {
+        font-size: 2em;
+        margin-right: 2em;
+    }
+
+    nav a {
+        font-size: 1.5em;
+        margin-right: 1em;
     }
 }
